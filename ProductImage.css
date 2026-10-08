@@ -1,0 +1,998 @@
+/* =========================================================
+   ARIANIQS VENDOR PORTAL
+   V-06 — PRODUCT IMAGES
+   PAGE LAYOUT
+   ========================================================= */
+
+.product-images-page {
+  width: 100%;
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 28px 32px 40px;
+  box-sizing: border-box;
+  color: #142630;
+  background: #f7f9fa;
+}
+
+/* =========================================================
+   PAGE HEADER
+   ========================================================= */
+
+.pi-page-header {
+  margin-bottom: 22px;
+}
+
+.pi-eyebrow {
+  display: block;
+  margin-bottom: 7px;
+  color: #6f7f87;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+}
+
+.pi-title-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 7px;
+}
+
+.pi-title-row h1 {
+  margin: 0;
+  color: #10232d;
+  font-size: 27px;
+  line-height: 1.15;
+  font-weight: 800;
+}
+
+.pi-step-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding: 0 9px;
+  border: 1px solid #d8e1e5;
+  border-radius: 5px;
+  background: #ffffff;
+  color: #708089;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+}
+
+.pi-page-header p {
+  max-width: 760px;
+  margin: 0;
+  color: #718089;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* =========================================================
+   NAVIGATOR
+   KEEPING THE WORKING NAVIGATOR
+   ========================================================= */
+
+/* =========================================================
+   V-06 — PRODUCT CREATION NAVIGATOR
+   ========================================================= */
+
+.product-images-page .product-progress {
+  display: flex !important;
+  align-items: center !important;
+
+  width: 100% !important;
+  min-height: 52px !important;
+
+  margin: 18px 0 22px !important;
+  padding: 11px 16px !important;
+
+  box-sizing: border-box !important;
+
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+
+  background: #ffffff !important;
+  border: 1px solid #dce3e6 !important;
+  border-radius: 10px !important;
+
+  box-shadow: 0 2px 8px rgba(7, 26, 36, 0.035) !important;
+
+  scrollbar-width: none !important;
+}
+
+.product-images-page .product-progress::-webkit-scrollbar {
+  display: none !important;
+}
+
+/* STEP */
+
+.product-images-page .product-progress-step {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+
+  flex: 0 0 auto !important;
+
+  width: auto !important;
+  min-width: max-content !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  color: #84939a !important;
+
+  font-size: 11px !important;
+  font-weight: 700 !important;
+
+  white-space: nowrap !important;
+}
+
+/* NUMBER */
+
+.product-images-page
+  .product-progress-step
+  .progress-number {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  width: 27px !important;
+  height: 27px !important;
+
+  flex-shrink: 0 !important;
+
+  border: 1px solid #dce3e6 !important;
+  border-radius: 50% !important;
+
+  background: #f5f7f8 !important;
+
+  color: #84939a !important;
+
+  font-size: 11px !important;
+  font-weight: 800 !important;
+
+  box-sizing: border-box !important;
+}
+
+/* LABEL */
+
+.product-images-page
+  .product-progress-step
+  .progress-label {
+  width: auto !important;
+  height: auto !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  border: 0 !important;
+  border-radius: 0 !important;
+
+  background: transparent !important;
+
+  color: inherit !important;
+
+  font-size: 11px !important;
+  font-weight: inherit !important;
+
+  white-space: nowrap !important;
+}
+
+/* COMPLETED */
+
+.product-images-page
+  .product-progress-step.completed {
+  color: #438f36 !important;
+}
+
+.product-images-page
+  .product-progress-step.completed
+  .progress-number {
+  border-color: #b9dcb3 !important;
+  background: #eef8ec !important;
+  color: #438f36 !important;
+}
+
+/* ACTIVE */
+
+.product-images-page
+  .product-progress-step.active {
+  color: #10232d !important;
+  font-weight: 800 !important;
+}
+
+.product-images-page
+  .product-progress-step.active
+  .progress-number {
+  border-color: #55b043 !important;
+  background: #55b043 !important;
+  color: #ffffff !important;
+}
+
+/* CONNECTING LINE */
+
+.product-images-page
+  .product-progress-line {
+  flex: 1 1 30px !important;
+
+  min-width: 28px !important;
+  height: 1px !important;
+
+  margin: 0 10px !important;
+
+  background: #dce3e6 !important;
+}
+
+.product-images-page
+  .product-progress-line.active {
+  background: #a9d49f !important;
+}
+/* =========================================================
+   PRODUCT SUMMARY
+   ========================================================= */
+
+.pi-product-summary {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.3fr 0.8fr;
+  gap: 0;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border: 1px solid #dce4e7;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(7, 26, 36, 0.035);
+}
+
+.pi-product-summary > div {
+  min-width: 0;
+  padding: 15px 18px;
+  border-right: 1px solid #e5eaec;
+}
+
+.pi-product-summary > div:last-child {
+  border-right: 0;
+}
+
+.pi-product-summary span {
+  display: block;
+  margin-bottom: 5px;
+  color: #89969c;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+}
+
+.pi-product-summary strong {
+  display: block;
+  overflow: hidden;
+  color: #1a303a;
+  font-size: 12px;
+  font-weight: 750;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* =========================================================
+   MAIN LAYOUT
+   ========================================================= */
+
+.pi-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 20px;
+  align-items: start;
+}
+
+.pi-main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-width: 0;
+}
+
+/* =========================================================
+   COMMON CARDS
+   ========================================================= */
+
+.pi-primary-card,
+.pi-section-card,
+.pi-side-card {
+  box-sizing: border-box;
+  border: 1px solid #dce4e7;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(7, 26, 36, 0.035);
+}
+
+/* =========================================================
+   SECTION HEADER
+   ========================================================= */
+
+.pi-section-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 18px;
+}
+
+.pi-section-title-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-bottom: 6px;
+}
+
+.pi-section-title-row h2 {
+  margin: 0;
+  color: #152b35;
+  font-size: 15px;
+  line-height: 1.3;
+  font-weight: 800;
+}
+
+.pi-section-header p {
+  max-width: 700px;
+  margin: 0 0 8px;
+  color: #718087;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.pi-guideline-text {
+  display: block;
+  color: #87949a;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.pi-required {
+  display: inline-flex;
+  align-items: center;
+  min-height: 19px;
+  padding: 0 7px;
+  border-radius: 4px;
+  background: #fff4e9;
+  color: #b96820;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+}
+
+.pi-count {
+  display: inline-flex;
+  align-items: center;
+  min-height: 22px;
+  padding: 0 8px;
+  border: 1px solid #dce4e7;
+  border-radius: 5px;
+  background: #f7f9fa;
+  color: #60727b;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+/* =========================================================
+   PRIMARY IMAGE
+   ========================================================= */
+
+.pi-primary-card {
+  padding: 22px;
+}
+
+.pi-primary-upload {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  box-sizing: border-box;
+  border: 1px dashed #b9c8ce;
+  border-radius: 9px;
+  background: #fbfcfc;
+  cursor: pointer;
+  text-align: center;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.pi-primary-upload:hover {
+  border-color: #55b043;
+  background: #f8fcf7;
+}
+
+.pi-primary-upload input,
+.pi-upload-box input {
+  display: none;
+}
+
+.pi-primary-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  margin-bottom: 12px;
+  border: 1px solid #d8e5d5;
+  border-radius: 50%;
+  background: #eef8ec;
+  color: #438f36;
+}
+
+.pi-primary-upload strong {
+  margin-bottom: 5px;
+  color: #243942;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.pi-primary-upload span {
+  margin-bottom: 5px;
+  color: #687a82;
+  font-size: 11px;
+}
+
+.pi-primary-upload small {
+  color: #96a1a6;
+  font-size: 10px;
+}
+
+.pi-primary-preview {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  min-height: 220px;
+  overflow: hidden;
+  border: 1px solid #dce4e7;
+  border-radius: 8px;
+  background: #fafcfc;
+}
+
+.pi-primary-preview img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  background: #f3f6f7;
+}
+
+.pi-primary-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 18px;
+  color: #438f36;
+}
+
+.pi-primary-info > div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.pi-primary-info strong {
+  overflow: hidden;
+  color: #263a42;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pi-primary-info span {
+  margin-top: 4px;
+  color: #829097;
+  font-size: 10px;
+}
+
+.pi-primary-info button {
+  border: 0;
+  background: transparent;
+  color: #3e7d35;
+  font-size: 11px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+/* =========================================================
+   IMAGE SECTION
+   ========================================================= */
+
+.pi-section-card {
+  padding: 21px;
+}
+
+.pi-section-card > .pi-section-header {
+  margin-bottom: 15px;
+}
+
+/* =========================================================
+   UPLOAD BOX
+   ========================================================= */
+
+.pi-upload-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-height: 74px;
+  padding: 13px 16px;
+  box-sizing: border-box;
+  border: 1px dashed #c4d0d4;
+  border-radius: 8px;
+  background: #fbfcfc;
+  cursor: pointer;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.pi-upload-box:hover {
+  border-color: #55b043;
+  background: #f8fcf7;
+}
+
+.pi-upload-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  border-radius: 7px;
+  background: #eef8ec;
+  color: #438f36;
+}
+
+.pi-upload-box strong {
+  color: #263a42;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.pi-upload-box span {
+  color: #718088;
+  font-size: 10px;
+}
+
+.pi-upload-box small {
+  margin-left: auto;
+  color: #909da2;
+  font-size: 9px;
+}
+
+/* =========================================================
+   IMAGE GRID
+   ========================================================= */
+
+.pi-image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 13px;
+}
+
+.pi-image-preview {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #dce4e7;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.pi-image-preview img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  background: #f4f7f8;
+}
+
+.pi-image-preview-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 8px;
+}
+
+.pi-image-preview-info span {
+  overflow: hidden;
+  color: #334952;
+  font-size: 9px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pi-image-preview-info small {
+  color: #8b989d;
+  font-size: 8px;
+}
+
+.pi-remove-btn {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 27px;
+  height: 27px;
+  border: 1px solid #e2d1d1;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #a34e4e;
+  cursor: pointer;
+}
+
+/* =========================================================
+   TWO COLUMN SECTIONS
+   ========================================================= */
+
+.pi-two-column {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+/* =========================================================
+   ERROR
+   ========================================================= */
+
+.pi-error {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 10px;
+  padding: 9px 11px;
+  border: 1px solid #efd1d1;
+  border-radius: 6px;
+  background: #fff7f7;
+  color: #a34e4e;
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+
+.pi-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 0;
+}
+
+.pi-side-card {
+  padding: 18px;
+}
+
+.pi-side-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  color: #4d7f48;
+}
+
+.pi-side-title h3,
+.pi-side-card h3 {
+  margin: 0;
+  color: #243942;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.pi-side-card p {
+  margin: 0;
+  color: #718088;
+  font-size: 10px;
+  line-height: 1.65;
+}
+
+.pi-side-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #89979d;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.pi-check-list,
+.pi-customer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 13px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pi-check-list li,
+.pi-customer-list li {
+  position: relative;
+  padding-left: 17px;
+  color: #5f7078;
+  font-size: 10px;
+  line-height: 1.45;
+}
+
+.pi-check-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #438f36;
+  font-weight: 800;
+}
+
+.pi-customer-list li::before {
+  content: "•";
+  position: absolute;
+  left: 2px;
+  color: #718088;
+  font-weight: 800;
+}
+
+/* =========================================================
+   STATUS
+   ========================================================= */
+
+.pi-status-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.pi-status-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 21px;
+  padding: 0 7px;
+  border-radius: 4px;
+  background: #fff4e9;
+  color: #b96820;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+}
+
+.pi-status-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  overflow: hidden;
+  border: 1px solid #e2e8ea;
+  border-radius: 7px;
+}
+
+.pi-status-grid > div {
+  padding: 10px;
+  border-right: 1px solid #e2e8ea;
+  border-bottom: 1px solid #e2e8ea;
+}
+
+.pi-status-grid > div:nth-child(2n) {
+  border-right: 0;
+}
+
+.pi-status-grid > div:nth-last-child(-n + 2) {
+  border-bottom: 0;
+}
+
+.pi-status-grid span {
+  display: block;
+  margin-bottom: 4px;
+  color: #89969c;
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.pi-status-grid strong {
+  color: #253b44;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.pi-status-grid .pi-total-status {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-right: 0;
+}
+
+.pi-total-status span {
+  margin: 0;
+}
+
+/* =========================================================
+   ACTION BAR
+   ========================================================= */
+
+.pi-action-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 20px;
+  padding: 14px 0 0;
+  border-top: 1px solid #dce4e7;
+}
+
+.pi-action-right {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.pi-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 38px;
+  padding: 0 15px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 800;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.pi-btn-secondary {
+  border: 1px solid #d4dee2;
+  background: #ffffff;
+  color: #43565e;
+}
+
+.pi-btn-secondary:hover {
+  background: #f4f7f8;
+}
+
+.pi-btn-light {
+  border: 1px solid #d4dee2;
+  background: #ffffff;
+  color: #43565e;
+}
+
+.pi-btn-light:hover {
+  background: #f4f7f8;
+}
+
+.pi-btn-primary {
+  border: 1px solid #438f36;
+  background: #438f36;
+  color: #ffffff;
+}
+
+.pi-btn-primary:hover {
+  background: #377d2f;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+  .pi-layout {
+    grid-template-columns: minmax(0, 1fr) 270px;
+  }
+
+  .pi-product-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pi-product-summary > div:nth-child(2) {
+    border-right: 0;
+  }
+
+  .pi-product-summary > div:nth-child(-n + 2) {
+    border-bottom: 1px solid #e5eaec;
+  }
+
+  .pi-image-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 850px) {
+  .product-images-page {
+    padding: 22px 20px 35px;
+  }
+
+  .pi-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .pi-sidebar {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pi-two-column {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-images-page {
+    padding: 18px 14px 28px;
+  }
+
+  .pi-title-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .pi-title-row h1 {
+    font-size: 23px;
+  }
+
+  .pi-product-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .pi-product-summary > div {
+    border-right: 0;
+    border-bottom: 1px solid #e5eaec;
+  }
+
+  .pi-product-summary > div:last-child {
+    border-bottom: 0;
+  }
+
+  .pi-primary-card,
+  .pi-section-card,
+  .pi-side-card {
+    padding: 15px;
+  }
+
+  .pi-primary-preview {
+    grid-template-columns: 1fr;
+  }
+
+  .pi-primary-preview img {
+    height: 190px;
+  }
+
+  .pi-upload-box {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .pi-upload-box small {
+    width: 100%;
+    margin-left: 53px;
+  }
+
+  .pi-image-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pi-sidebar {
+    grid-template-columns: 1fr;
+  }
+
+  .pi-action-bar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .pi-action-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pi-btn {
+    width: 100%;
+  }
+}

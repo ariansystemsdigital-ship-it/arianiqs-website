@@ -1,0 +1,680 @@
+.submit-quote-page {
+  min-height: calc(100vh - 72px);
+  padding: 28px 34px 50px;
+  background: #f5f7f6;
+}
+
+/* =========================================================
+   TOP BAR
+========================================================= */
+
+.quote-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.quote-back-button {
+  border: 0;
+  background: transparent;
+  color: #4b5952;
+  padding: 7px 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.quote-back-button:hover {
+  color: #398b31;
+}
+
+.quote-page-step {
+  font-size: 10px;
+  font-weight: 800;
+  color: #5a665f;
+  letter-spacing: 0.08em;
+  background: #ffffff;
+  border: 1px solid #dfe6e2;
+  padding: 7px 10px;
+  border-radius: 7px;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.quote-page-header {
+  margin-bottom: 22px;
+}
+
+.quote-breadcrumb {
+  color: #7c8781;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.quote-page-header h1 {
+  margin: 0;
+  color: #17211c;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.quote-page-header p {
+  margin: 8px 0 0;
+  color: #68736e;
+  font-size: 14px;
+}
+
+/* =========================================================
+   RFQ SUMMARY
+========================================================= */
+
+.quote-rfq-summary {
+  background: #ffffff;
+  border: 1px solid #dfe6e2;
+  border-radius: 12px;
+  padding: 18px 20px;
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.summary-product-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: #eef7ec;
+  color: #4b9c41;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.summary-product-content span {
+  display: block;
+  color: #7f8984;
+  font-size: 11px;
+  margin-bottom: 4px;
+}
+
+.summary-product-content strong {
+  display: block;
+  color: #27332c;
+  font-size: 14px;
+}
+
+.summary-product-content small {
+  display: block;
+  color: #8b948f;
+  font-size: 11px;
+  margin-top: 3px;
+}
+
+.summary-request {
+  padding-left: 20px;
+  border-left: 1px solid #e5eae7;
+}
+
+.summary-request span {
+  display: block;
+  color: #818c86;
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+
+.summary-request strong {
+  color: #344039;
+  font-size: 14px;
+}
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.quote-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.quote-form-card {
+  background: #ffffff;
+  border: 1px solid #dfe6e2;
+  border-radius: 12px;
+  padding: 21px;
+}
+
+.quote-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding-bottom: 17px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid #edf0ee;
+}
+
+.quote-section-icon {
+  width: 36px;
+  height: 36px;
+  background: #eef7ec;
+  color: #4b9c41;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-section-heading h2 {
+  margin: 0;
+  color: #27332c;
+  font-size: 16px;
+}
+
+.quote-section-heading p {
+  margin: 3px 0 0;
+  color: #89928d;
+  font-size: 12px;
+}
+
+/* =========================================================
+   FORM GRID
+========================================================= */
+
+.quote-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.quote-field {
+  position: relative;
+  min-width: 0;
+}
+
+.quote-field.full-field {
+  width: 100%;
+}
+
+.quote-field label {
+  display: block;
+  margin-bottom: 7px;
+  color: #4b5750;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.quote-field label span {
+  color: #c54b4b;
+}
+
+/* =========================================================
+   NORMAL INPUTS + TEXTAREA
+========================================================= */
+
+.quote-field input,
+.quote-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #d8e0dc;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #27332c;
+  outline: none;
+  font-family: inherit;
+  font-size: 13px;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.quote-field input {
+  height: 43px;
+  padding: 0 12px;
+}
+
+.quote-field textarea {
+  padding: 12px;
+  resize: vertical;
+  min-height: 110px;
+  line-height: 1.5;
+}
+
+.quote-field input:focus,
+.quote-field textarea:focus {
+  border-color: #55b043;
+  box-shadow: 0 0 0 3px rgba(85, 176, 67, 0.08);
+}
+
+.quote-field input::placeholder,
+.quote-field textarea::placeholder {
+  color: #a0a9a4;
+}
+
+/* =========================================================
+   COMMERCIAL PRICE INPUT
+   ₹ + INPUT
+========================================================= */
+
+.input-with-prefix,
+.input-with-suffix {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 43px;
+  box-sizing: border-box;
+  border: 1px solid #d8e0dc;
+  border-radius: 8px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.input-with-prefix:focus-within,
+.input-with-suffix:focus-within {
+  border-color: #55b043;
+  box-shadow: 0 0 0 3px rgba(85, 176, 67, 0.08);
+}
+
+/* ₹ / Days section */
+
+.input-with-prefix > span,
+.input-with-suffix > span {
+  height: 100%;
+  min-width: 46px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 13px;
+
+  background: #f7f9f8;
+  border-right: 1px solid #e1e7e3;
+
+  color: #4d5a52;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* Input inside ₹ / Days wrapper */
+
+.input-with-prefix > input,
+.input-with-suffix > input {
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+
+  border: 0 !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border-radius: 0;
+
+  padding: 0 12px;
+
+  background: #ffffff;
+  color: #27332c;
+
+  font-family: inherit;
+  font-size: 13px;
+}
+
+/* Focus inside wrapper */
+
+.input-with-prefix > input:focus,
+.input-with-suffix > input:focus {
+  border: 0 !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Placeholder */
+
+.input-with-prefix > input::placeholder,
+.input-with-suffix > input::placeholder {
+  color: #a0a9a4;
+}
+
+/* =========================================================
+   NUMBER INPUT ARROWS
+========================================================= */
+
+.quote-field input[type="number"]::-webkit-inner-spin-button,
+.quote-field input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
+  margin: 0;
+}
+
+/* Firefox */
+
+.quote-field input[type="number"] {
+  appearance: auto;
+}
+
+/* =========================================================
+   ESTIMATED TOTAL
+========================================================= */
+
+.quote-total {
+  margin-top: 18px;
+  padding: 14px 16px;
+  background: #f0f8ee;
+  border: 1px solid #d8ebd4;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quote-total span {
+  color: #61705f;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.quote-total strong {
+  color: #327b2c;
+  font-size: 17px;
+}
+
+/* =========================================================
+   ERRORS
+========================================================= */
+
+.field-error {
+  display: block;
+  margin-top: 5px;
+  color: #bd4949;
+  font-size: 11px;
+}
+
+.field-counter {
+  text-align: right;
+  color: #9aa39e;
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.quote-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.primary-quote-button,
+.secondary-quote-button {
+  min-height: 44px;
+  padding: 0 18px;
+  border-radius: 8px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  font-weight: 700;
+  font-size: 13px;
+
+  cursor: pointer;
+}
+
+.primary-quote-button {
+  border: 0;
+  background: #55b043;
+  color: #ffffff;
+}
+
+.primary-quote-button:hover {
+  background: #469737;
+}
+
+.secondary-quote-button {
+  border: 1px solid #d6ded9;
+  background: #ffffff;
+  color: #4c5851;
+}
+
+.secondary-quote-button:hover {
+  border-color: #55b043;
+  color: #398b31;
+}
+
+/* =========================================================
+   CLOSED RFQ
+========================================================= */
+
+.quote-closed-card {
+  background: #ffffff;
+  border: 1px solid #dfe6e2;
+  border-radius: 12px;
+  padding: 60px 24px;
+  text-align: center;
+  color: #87918c;
+}
+
+.quote-closed-card svg {
+  margin-bottom: 12px;
+}
+
+.quote-closed-card h2 {
+  margin: 0 0 7px;
+  color: #39463f;
+  font-size: 19px;
+}
+
+.quote-closed-card p {
+  margin: 0 auto 20px;
+  max-width: 550px;
+  color: #7b8580;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* =========================================================
+   SUCCESS
+========================================================= */
+
+.quote-success-card {
+  max-width: 850px;
+  margin: 30px auto;
+  background: #ffffff;
+  border: 1px solid #dfe6e2;
+  border-radius: 14px;
+  padding: 38px;
+  text-align: center;
+}
+
+.quote-success-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 17px;
+  border-radius: 50%;
+  background: #eaf6e7;
+  color: #46963d;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-success-card h1 {
+  margin: 0;
+  color: #26322b;
+  font-size: 27px;
+}
+
+.quote-success-card > p {
+  margin: 9px auto 25px;
+  color: #707b75;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* Submitted summary */
+
+.submitted-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+
+  background: #e2e8e4;
+  border: 1px solid #e2e8e4;
+  border-radius: 9px;
+
+  overflow: hidden;
+  text-align: left;
+
+  margin-bottom: 18px;
+}
+
+.submitted-summary > div {
+  background: #fafcfb;
+  padding: 13px;
+}
+
+.submitted-summary span {
+  display: block;
+  color: #8a948f;
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+
+.submitted-summary strong {
+  display: block;
+  color: #3d4942;
+  font-size: 12px;
+}
+
+/* Success note */
+
+.success-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+
+  padding: 13px 15px;
+
+  background: #f0f7ee;
+  border: 1px solid #d7e9d2;
+  border-radius: 8px;
+
+  text-align: left;
+  color: #4d7a47;
+}
+
+.success-note p {
+  margin: 0;
+  color: #667363;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+/* Success actions */
+
+.success-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+/* =========================================================
+   NOT FOUND
+========================================================= */
+
+.quote-not-found {
+  background: #ffffff;
+  border: 1px solid #dfe6e2;
+  border-radius: 12px;
+  padding: 80px 20px;
+  text-align: center;
+  color: #87918c;
+}
+
+.quote-not-found svg {
+  margin-bottom: 10px;
+}
+
+.quote-not-found h2 {
+  margin: 0 0 7px;
+  color: #3c4942;
+  font-size: 18px;
+}
+
+.quote-not-found p {
+  margin: 0;
+  font-size: 13px;
+}
+
+/* =========================================================
+   RESPONSIVE - TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+  .quote-rfq-summary {
+    grid-template-columns: auto 1fr;
+  }
+
+  .summary-request {
+    border-left: 0;
+    border-top: 1px solid #e5eae7;
+    padding: 12px 0 0;
+  }
+
+  .submitted-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =========================================================
+   RESPONSIVE - MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+  .submit-quote-page {
+    padding: 22px 16px 40px;
+  }
+
+  .quote-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quote-rfq-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .summary-request {
+    border-top: 1px solid #e5eae7;
+    padding-top: 12px;
+  }
+
+  .quote-form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .primary-quote-button,
+  .secondary-quote-button {
+    width: 100%;
+  }
+
+  .submitted-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .success-actions {
+    flex-direction: column;
+  }
+}

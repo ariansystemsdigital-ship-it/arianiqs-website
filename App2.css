@@ -1,0 +1,4827 @@
+
+
+/* =========================================================
+   ARIANIQS VENDOR PORTAL
+   V-01 PRODUCT IDENTITY
+========================================================= */
+
+.product-identity-page {
+  min-height: 100%;
+  background: #f5f7f8;
+  padding: 28px 32px 40px;
+}
+
+
+/* =========================================================
+   PAGE HEADER
+========================================================= */
+
+.product-page-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.product-header-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  margin-top: 4px;
+
+  border: 1px solid #dce3e6;
+  background: #ffffff;
+  color: #52656e;
+
+  border-radius: 8px;
+  padding: 9px 12px;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.back-button:hover {
+  border-color: #55b043;
+  color: #438f36;
+}
+
+.product-eyebrow {
+  margin-bottom: 5px;
+
+  color: #55b043;
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.product-page-header h1 {
+  margin: 0;
+
+  color: #10232d;
+
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.product-page-header p {
+  margin: 7px 0 0;
+
+  color: #52656e;
+
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   STEP INDICATOR
+========================================================= */
+
+.product-step-card {
+  display: flex;
+  align-items: center;
+
+  background: #ffffff;
+
+  border: 1px solid #dce3e6;
+  border-radius: 10px;
+
+  padding: 15px 20px;
+
+  margin-bottom: 20px;
+
+  box-shadow:
+    0 2px 8px rgba(7, 26, 36, 0.035);
+}
+
+.product-step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  min-width: 190px;
+}
+
+.step-number {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #eef2f3;
+  color: #84939a;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.product-step.active .step-number {
+  background: #55b043;
+  color: #ffffff;
+}
+
+.product-step strong {
+  display: block;
+
+  color: #10232d;
+
+  font-size: 12px;
+}
+
+.product-step span {
+  display: block;
+
+  margin-top: 2px;
+
+  color: #84939a;
+
+  font-size: 10px;
+}
+
+.product-step.active span {
+  color: #438f36;
+}
+
+.step-line {
+  flex: 1;
+
+  height: 1px;
+
+  margin: 0 15px;
+
+  background: #dce3e6;
+}
+
+
+/* =========================================================
+   MAIN LAYOUT
+========================================================= */
+
+.product-identity-layout {
+  display: grid;
+
+  grid-template-columns: minmax(0, 1fr) 310px;
+
+  gap: 20px;
+
+  align-items: start;
+}
+
+
+/* =========================================================
+   FORM CARD
+========================================================= */
+
+.product-form-card {
+  background: #ffffff;
+
+  border: 1px solid #dce3e6;
+  border-radius: 12px;
+
+  padding: 25px 27px;
+
+  box-shadow:
+    0 2px 8px rgba(7, 26, 36, 0.035);
+}
+
+.form-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid #edf1f2;
+
+  margin-bottom: 22px;
+}
+
+.form-step-label {
+  color: #55b043;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 0.1em;
+}
+
+.form-card-header h2 {
+  margin: 5px 0 4px;
+
+  color: #10232d;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.form-card-header p {
+  margin: 0;
+
+  color: #52656e;
+
+  font-size: 12px;
+}
+
+.identity-check-icon {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 9px;
+
+  background: #edf8eb;
+  color: #55b043;
+}
+
+
+/* =========================================================
+   FORM FIELDS
+========================================================= */
+
+.form-field {
+  margin-bottom: 22px;
+}
+
+.form-field label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #10232d;
+
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.form-field label span {
+  margin-left: 3px;
+
+  color: #d64545;
+}
+
+.field-control {
+  position: relative;
+
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+
+  border: 1px solid #d2dce0;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #52656e;
+}
+
+.field-control:focus-within {
+  border-color: #55b043;
+
+  box-shadow:
+    0 0 0 3px rgba(85, 176, 67, 0.09);
+}
+
+.field-control select {
+  width: 100%;
+  height: 100%;
+
+  padding: 0 38px 0 13px;
+
+  border: 0;
+  outline: 0;
+
+  appearance: none;
+
+  background: transparent;
+
+  color: #10232d;
+
+  font-size: 12px;
+
+  cursor: pointer;
+}
+
+.field-control > svg:last-child {
+  position: absolute;
+
+  right: 13px;
+
+  pointer-events: none;
+
+  color: #84939a;
+}
+
+.searchable-select > svg:first-child {
+  margin-left: 13px;
+
+  color: #84939a;
+}
+
+.searchable-select select {
+  padding-left: 9px;
+}
+
+.field-disabled {
+  background: #f7f9fa;
+  cursor: not-allowed;
+}
+
+.field-disabled select {
+  color: #a0abb0;
+  cursor: not-allowed;
+}
+
+.text-input {
+  width: 100%;
+  height: 44px;
+
+  box-sizing: border-box;
+
+  padding: 0 13px;
+
+  border: 1px solid #d2dce0;
+  border-radius: 8px;
+
+  outline: 0;
+
+  background: #ffffff;
+
+  color: #10232d;
+
+  font-size: 12px;
+}
+
+.text-input::placeholder {
+  color: #9aa6ad;
+}
+
+.text-input:focus {
+  border-color: #55b043;
+
+  box-shadow:
+    0 0 0 3px rgba(85, 176, 67, 0.09);
+}
+
+.field-help {
+  margin-top: 6px;
+
+  color: #84939a;
+
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.field-bottom-info {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 5px;
+
+  color: #84939a;
+
+  font-size: 10px;
+}
+
+
+/* =========================================================
+   MASTER DATA REQUEST
+========================================================= */
+
+.request-master-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+
+  margin-top: 9px;
+
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+
+  color: #438f36;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.request-master-button:hover {
+  color: #55b043;
+  text-decoration: underline;
+}
+
+
+/* =========================================================
+   FORM ACTIONS
+========================================================= */
+
+.product-form-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 10px;
+
+  padding-top: 6px;
+
+  border-top: 1px solid #edf1f2;
+
+  margin-top: 4px;
+}
+
+.secondary-product-button,
+.primary-product-button {
+  min-height: 40px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  border-radius: 8px;
+
+  padding: 0 15px;
+
+  font-size: 12px;
+  font-weight: 650;
+
+  cursor: pointer;
+}
+
+.secondary-product-button {
+  border: 1px solid #d2dce0;
+
+  background: #ffffff;
+
+  color: #52656e;
+}
+
+.secondary-product-button:hover {
+  border-color: #55b043;
+  color: #438f36;
+}
+
+.primary-product-button {
+  border: 1px solid #55b043;
+
+  background: #55b043;
+
+  color: #ffffff;
+}
+
+.primary-product-button:hover {
+  border-color: #438f36;
+  background: #438f36;
+}
+
+
+/* =========================================================
+   INFORMATION CARD
+========================================================= */
+
+.identity-info-card {
+  background: #ffffff;
+
+  border: 1px solid #dce3e6;
+  border-radius: 12px;
+
+  padding: 22px;
+
+  box-shadow:
+    0 2px 8px rgba(7, 26, 36, 0.035);
+}
+
+.info-card-icon {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 13px;
+
+  border-radius: 9px;
+
+  background: #edf8eb;
+  color: #55b043;
+}
+
+.identity-info-card h3 {
+  margin: 0 0 7px;
+
+  color: #10232d;
+
+  font-size: 15px;
+}
+
+.identity-info-card > p {
+  margin: 0 0 18px;
+
+  color: #52656e;
+
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.identity-rule {
+  padding: 13px 0;
+
+  border-top: 1px solid #edf1f2;
+}
+
+.identity-rule strong {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #10232d;
+
+  font-size: 11px;
+}
+
+.identity-rule span {
+  display: block;
+
+  color: #84939a;
+
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .product-identity-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .identity-info-card {
+    order: 2;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .product-identity-page {
+    padding: 20px 16px 30px;
+  }
+
+  .product-step-card {
+    overflow-x: auto;
+  }
+
+  .product-step {
+    min-width: 170px;
+  }
+
+  .step-line {
+    min-width: 25px;
+  }
+
+  .product-form-card {
+    padding: 20px;
+  }
+
+  .product-form-actions {
+    justify-content: stretch;
+  }
+
+  .secondary-product-button,
+  .primary-product-button {
+    flex: 1;
+  }
+
+}
+
+
+/* =========================================================
+   ARIANIQS VENDOR PORTAL
+   V-02 PRODUCT MATCH RESULT
+========================================================= */
+
+.product-match-page {
+  min-height: 100%;
+  background: #f5f7f8;
+  padding: 28px 32px 44px;
+  color: #10232d;
+}
+
+/* ---------------------------------------------------------
+   HEADER
+--------------------------------------------------------- */
+
+.product-match-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 22px;
+}
+
+.product-match-header-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.product-match-header h1 {
+  margin: 4px 0 7px;
+  font-size: 27px;
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  color: #10232d;
+}
+
+.product-match-header p {
+  margin: 0;
+  max-width: 720px;
+  color: #52656e;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* ---------------------------------------------------------
+   STEP INDICATOR
+--------------------------------------------------------- */
+
+.product-step-card {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #dce3e6;
+  border-radius: 12px;
+  padding: 15px 18px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(7, 26, 36, 0.035);
+}
+
+.product-step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 180px;
+}
+
+.product-step .step-number {
+  width: 31px;
+  height: 31px;
+  flex: 0 0 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #edf1f3;
+  color: #84939a;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.product-step strong {
+  display: block;
+  color: #10232d;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.product-step span {
+  display: block;
+  margin-top: 2px;
+  color: #84939a;
+  font-size: 10px;
+}
+
+.product-step.completed .step-number {
+  background: #55b043;
+  color: #ffffff;
+}
+
+.product-step.active .step-number {
+  background: #55b043;
+  color: #ffffff;
+}
+
+.product-step.active strong {
+  color: #438f36;
+}
+
+.step-line {
+  height: 1px;
+  flex: 1;
+  margin: 0 16px;
+  background: #dce3e6;
+}
+
+.step-line.active {
+  background: #55b043;
+}
+
+/* ---------------------------------------------------------
+   RESULT BANNER
+--------------------------------------------------------- */
+
+.match-result-banner {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 19px 21px;
+  margin-bottom: 20px;
+  border: 1px solid;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.match-result-exact {
+  border-color: #b9ddaf;
+  background: #f5fbf3;
+}
+
+.match-result-possible {
+  border-color: #ead6a8;
+  background: #fffaf0;
+}
+
+.match-result-new {
+  border-color: #c9dce8;
+  background: #f5f9fc;
+}
+
+.match-result-icon {
+  width: 45px;
+  height: 45px;
+  flex: 0 0 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+}
+
+.match-result-exact .match-result-icon {
+  background: #e2f3dd;
+  color: #2e8b57;
+}
+
+.match-result-possible .match-result-icon {
+  background: #f8edcf;
+  color: #b07a09;
+}
+
+.match-result-new .match-result-icon {
+  background: #e3eff6;
+  color: #3d718d;
+}
+
+.match-result-content {
+  min-width: 0;
+  flex: 1;
+}
+
+.match-result-eyebrow {
+  margin-bottom: 3px;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  color: #84939a;
+}
+
+.match-result-content h2 {
+  margin: 0 0 4px;
+  font-size: 17px;
+  line-height: 1.25;
+}
+
+.match-result-content p {
+  margin: 0;
+  max-width: 820px;
+  color: #52656e;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.match-engine-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 10px;
+  border: 1px solid #dce3e6;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #52656e;
+  font-size: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* ---------------------------------------------------------
+   MAIN LAYOUT
+--------------------------------------------------------- */
+
+.product-match-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 310px;
+  gap: 20px;
+  align-items: start;
+}
+
+.product-match-main {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.match-card {
+  background: #ffffff;
+  border: 1px solid #dce3e6;
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0 2px 8px rgba(7, 26, 36, 0.035);
+}
+
+.match-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #edf0f2;
+}
+
+.match-card-header h2 {
+  margin: 4px 0 5px;
+  color: #10232d;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.match-card-header p {
+  margin: 0;
+  color: #84939a;
+  font-size: 11px;
+  line-height: 1.55;
+}
+
+.form-step-label {
+  color: #55b043;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+}
+
+.match-card-header-icon,
+.match-success-mark,
+.match-warning-mark,
+.match-new-mark {
+  width: 39px;
+  height: 39px;
+  flex: 0 0 39px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+}
+
+.match-card-header-icon {
+  color: #55b043;
+  background: #edf8ea;
+}
+
+.match-success-mark {
+  color: #2e8b57;
+  background: #e6f5e1;
+}
+
+.match-warning-mark {
+  color: #b07a09;
+  background: #fbf0d4;
+}
+
+.match-new-mark {
+  color: #3d718d;
+  background: #e6f0f5;
+}
+
+/* ---------------------------------------------------------
+   IDENTITY SUMMARY
+--------------------------------------------------------- */
+
+.identity-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border: 1px solid #dce3e6;
+  border-radius: 9px;
+  overflow: hidden;
+  margin-top: 18px;
+}
+
+.identity-summary-item {
+  min-height: 76px;
+  padding: 14px 16px;
+  background: #fbfcfd;
+  border-right: 1px solid #e4e9eb;
+  border-bottom: 1px solid #e4e9eb;
+}
+
+.identity-summary-item:nth-child(2n) {
+  border-right: 0;
+}
+
+.identity-summary-item:nth-last-child(-n + 2) {
+  border-bottom: 0;
+}
+
+.identity-summary-item span {
+  display: block;
+  margin-bottom: 7px;
+  color: #84939a;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.identity-summary-item strong {
+  display: block;
+  color: #10232d;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.identity-summary-mpn strong {
+  font-family: Consolas, "Courier New", monospace;
+  letter-spacing: 0.15px;
+}
+
+/* ---------------------------------------------------------
+   MASTER PRODUCT
+--------------------------------------------------------- */
+
+.master-product-result {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 18px;
+  padding: 17px;
+  border: 1px solid #dce3e6;
+  border-radius: 10px;
+  background: #fbfcfd;
+}
+
+.master-product-icon {
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: #edf8ea;
+  color: #55b043;
+}
+
+.master-product-details {
+  min-width: 0;
+  flex: 1;
+}
+
+.master-product-code {
+  display: block;
+  margin-bottom: 4px;
+  color: #55b043;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+}
+
+.master-product-details h3 {
+  margin: 0 0 8px;
+  color: #10232d;
+  font-size: 15px;
+}
+
+.master-product-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  color: #84939a;
+  font-size: 10px;
+}
+
+.verified-product-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #2e8b57;
+  font-weight: 700;
+}
+
+.match-rule-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 14px;
+  padding: 13px 14px;
+  border-radius: 8px;
+  background: #f5f9f4;
+  color: #55b043;
+}
+
+.match-rule-box div {
+  min-width: 0;
+}
+
+.match-rule-box strong {
+  display: block;
+  margin-bottom: 3px;
+  color: #10232d;
+  font-size: 11px;
+}
+
+.match-rule-box p {
+  margin: 0;
+  color: #52656e;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+/* ---------------------------------------------------------
+   POSSIBLE MATCH
+--------------------------------------------------------- */
+
+.possible-match-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 18px;
+  padding: 13px 14px;
+  border: 1px solid #ead6a8;
+  border-radius: 8px;
+  background: #fffaf0;
+  color: #b07a09;
+}
+
+.possible-match-notice strong {
+  display: block;
+  margin-bottom: 3px;
+  color: #5e4a1a;
+  font-size: 11px;
+}
+
+.possible-match-notice p {
+  margin: 0;
+  color: #806a34;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.possible-product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-top: 16px;
+}
+
+.possible-product-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px;
+  border: 1px solid #dce3e6;
+  border-radius: 9px;
+  background: #ffffff;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.possible-product-item:hover {
+  border-color: #b8cfb2;
+  box-shadow: 0 3px 12px rgba(7, 26, 36, 0.04);
+}
+
+.possible-product-icon {
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: #f0f4f5;
+  color: #52656e;
+}
+
+.possible-product-info {
+  min-width: 0;
+  flex: 1;
+}
+
+.possible-product-info span {
+  display: block;
+  margin-bottom: 3px;
+  color: #55b043;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.possible-product-info strong {
+  display: block;
+  color: #10232d;
+  font-size: 12px;
+}
+
+.possible-product-info small {
+  display: block;
+  margin-top: 4px;
+  color: #84939a;
+  font-size: 9px;
+  font-family: Consolas, "Courier New", monospace;
+}
+
+.possible-product-match {
+  padding: 5px 8px;
+  border-radius: 5px;
+  background: #f2f5f6;
+  color: #52656e;
+  font-size: 9px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.review-product-button {
+  height: 32px;
+  padding: 0 11px;
+  border: 1px solid #cfd9dd;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #52656e;
+  font-size: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.review-product-button:hover {
+  border-color: #55b043;
+  color: #438f36;
+}
+
+/* ---------------------------------------------------------
+   NEW PRODUCT FLOW
+--------------------------------------------------------- */
+
+.new-product-flow {
+  margin-top: 19px;
+  padding: 16px;
+  border: 1px solid #dce3e6;
+  border-radius: 9px;
+  background: #fbfcfd;
+}
+
+.new-product-flow-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+}
+
+.flow-check {
+  width: 29px;
+  height: 29px;
+  flex: 0 0 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #e9eef0;
+  color: #84939a;
+}
+
+.new-product-flow-item.current .flow-check {
+  background: #e7f5e3;
+  color: #55b043;
+}
+
+.new-product-flow-item strong {
+  display: block;
+  margin-bottom: 3px;
+  color: #10232d;
+  font-size: 11px;
+}
+
+.new-product-flow-item span {
+  display: block;
+  color: #84939a;
+  font-size: 10px;
+  line-height: 1.45;
+}
+
+.new-product-flow-line {
+  width: 1px;
+  height: 24px;
+  margin: 4px 0 4px 14px;
+  background: #dce3e6;
+}
+
+/* ---------------------------------------------------------
+   ACTIONS
+--------------------------------------------------------- */
+
+.match-card-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding-top: 17px;
+  border-top: 1px solid #edf0f2;
+}
+
+.secondary-product-button,
+.primary-product-button {
+  min-height: 39px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 15px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.secondary-product-button {
+  border: 1px solid #d1dce0;
+  background: #ffffff;
+  color: #52656e;
+}
+
+.secondary-product-button:hover {
+  border-color: #55b043;
+  color: #438f36;
+}
+
+.primary-product-button {
+  border: 1px solid #55b043;
+  background: #55b043;
+  color: #ffffff;
+  box-shadow: 0 2px 5px rgba(85, 176, 67, 0.18);
+}
+
+.primary-product-button:hover {
+  border-color: #438f36;
+  background: #438f36;
+}
+
+/* ---------------------------------------------------------
+   RIGHT SIDEBAR
+--------------------------------------------------------- */
+
+.product-match-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.match-side-card {
+  padding: 19px;
+  border: 1px solid #dce3e6;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(7, 26, 36, 0.035);
+}
+
+.match-side-icon {
+  width: 37px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  border-radius: 9px;
+  background: #edf8ea;
+  color: #55b043;
+}
+
+.match-side-card h3 {
+  margin: 0 0 7px;
+  color: #10232d;
+  font-size: 13px;
+}
+
+.match-side-card > p {
+  margin: 0;
+  color: #84939a;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.matching-rule {
+  display: flex;
+  gap: 9px;
+  padding: 12px 0;
+  border-bottom: 1px solid #edf0f2;
+}
+
+.matching-rule:last-child {
+  border-bottom: 0;
+}
+
+.matching-rule > span {
+  width: 24px;
+  height: 24px;
+  flex: 0 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background: #f0f4f5;
+  color: #52656e;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.matching-rule strong {
+  display: block;
+  margin-bottom: 2px;
+  color: #10232d;
+  font-size: 10px;
+}
+
+.matching-rule p {
+  margin: 0;
+  color: #84939a;
+  font-size: 9px;
+  line-height: 1.4;
+}
+
+.matching-rule.warning-rule > span {
+  background: #fff1d7;
+  color: #b07a09;
+}
+
+.match-side-note {
+  background: #f9fbfb;
+}
+
+.match-side-note .match-side-icon {
+  background: #eaf1f4;
+  color: #52656e;
+}
+
+/* ---------------------------------------------------------
+   RESPONSIVE
+--------------------------------------------------------- */
+
+@media (max-width: 1100px) {
+  .product-match-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .product-match-sidebar {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 800px) {
+  .product-match-page {
+    padding: 22px 18px 35px;
+  }
+
+  .product-step-card {
+    overflow-x: auto;
+  }
+
+  .product-step {
+    min-width: 155px;
+  }
+
+  .product-match-header-left {
+    gap: 12px;
+  }
+
+  .match-result-banner {
+    align-items: flex-start;
+  }
+
+  .match-engine-badge {
+    display: none;
+  }
+
+  .identity-summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .identity-summary-item,
+  .identity-summary-item:nth-child(2n),
+  .identity-summary-item:nth-last-child(-n + 2) {
+    border-right: 0;
+    border-bottom: 1px solid #e4e9eb;
+  }
+
+  .identity-summary-item:last-child {
+    border-bottom: 0;
+  }
+
+  .possible-product-item {
+    flex-wrap: wrap;
+  }
+
+  .possible-product-match {
+    margin-left: 50px;
+  }
+
+  .review-product-button {
+    margin-left: auto;
+  }
+
+  .product-match-sidebar {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-match-page {
+    padding: 18px 14px 30px;
+  }
+
+  .product-match-header h1 {
+    font-size: 23px;
+  }
+
+  .product-step-card {
+    padding: 12px;
+  }
+
+  .product-step {
+    min-width: 135px;
+  }
+
+  .product-step strong {
+    font-size: 10px;
+  }
+
+  .product-step span {
+    font-size: 9px;
+  }
+
+  .match-card {
+    padding: 17px;
+  }
+
+  .match-result-banner {
+    padding: 15px;
+  }
+
+  .match-card-actions {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+
+  .secondary-product-button,
+  .primary-product-button {
+    width: 100%;
+  }
+}
+
+/* =========================================================
+     V-03 — BASIC PRODUCT INFORMATION
+   Production Vendor Portal
+ ========================================================= */
+
+.basic-product-page {
+ min-height: 100%;
+ background: #f5f7f8;
+ padding: 28px 32px 44px;
+}
+
+.product-wizard-shell {
+  width: 100%;
+  max-width: 1380px;
+  margin: 0 auto;
+}
+
+.product-wizard-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 22px;
+}
+
+.product-step-label {
+  color: #55b043;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+}
+
+.product-wizard-header h1 {
+  margin: 0;
+  color: #10232d;
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.product-wizard-header p {
+  margin: 8px 0 0;
+  color: #52656e;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.product-step-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  padding: 9px 13px;
+  border: 1px solid #cfe2cc;
+  border-radius: 8px;
+  background: #f4fbf2;
+  color: #438f36;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.product-step-badge-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #55b043;
+}
+
+/* Progress */
+
+.product-progress {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 22px;
+  padding: 14px 18px;
+  background: #ffffff;
+  border: 1px solid #dce3e6;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(7, 26, 36, 0.035);
+}
+
+.product-progress-step {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #84939a;
+  white-space: nowrap;
+}
+
+.product-progress-step span {
+  width: 27px;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dce3e6;
+  border-radius: 50%;
+  background: #f5f7f8;
+  color: #84939a;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.product-progress-step label {
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.product-progress-step.completed {
+  color: #438f36;
+}
+
+.product-progress-step.completed span {
+  border-color: #b9dcb3;
+  background: #eef8ec;
+  color: #438f36;
+}
+
+.product-progress-step.active {
+  color: #10232d;
+}
+
+.product-progress-step.active span {
+  border-color: #55b043;
+  background: #55b043;
+  color: #ffffff;
+}
+
+.product-progress-line {
+  flex: 1;
+  min-width: 20px;
+  height: 1px;
+  margin: 0 10px;
+  background: #dce3e6;
+}
+
+.product-progress-line.completed,
+.product-progress-line.active {
+  background: #a9d49f;
+}
+
+/* Main layout */
+
+.basic-product-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 20px;
+  align-items: start;
+}
+
+.basic-product-card {
+  min-width: 0;
+  background: #ffffff;
+  border: 1px solid #dce3e6;
+  border-radius: 11px;
+  box-shadow: 0 2px 8px rgba(7, 26, 36, 0.035);
+}
+
+.basic-card-header {
+  padding: 22px 24px;
+  border-bottom: 1px solid #e7ecee;
+}
+
+.basic-card-header h2 {
+  margin: 0;
+  color: #10232d;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.basic-card-header p {
+  max-width: 760px;
+  margin: 7px 0 0;
+  color: #6c7b82;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* Identity reference */
+
+.identity-reference {
+  margin: 20px 24px 24px;
+  padding: 16px;
+  border: 1px solid #dce3e6;
+  border-radius: 9px;
+  background: #f8fafb;
+}
+
+.identity-reference-title {
+  margin-bottom: 13px;
+  color: #52656e;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.identity-reference-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.identity-reference-grid div {
+  min-width: 0;
+}
+
+.identity-reference-grid span {
+  display: block;
+  margin-bottom: 5px;
+  color: #84939a;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.identity-reference-grid strong {
+  display: block;
+  overflow: hidden;
+  color: #10232d;
+  font-size: 12px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Form */
+
+.form-field {
+  padding: 0 24px;
+  margin-bottom: 22px;
+}
+
+.field-label-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 7px;
+}
+
+.field-label-row label {
+  color: #10232d;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.field-label-row label span {
+  color: #d64545;
+}
+
+.character-counter {
+  color: #84939a;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.character-counter.warning {
+  color: #d99a16;
+}
+
+.optional-label {
+  color: #84939a;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.form-field input,
+.form-field textarea,
+.form-field select {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #d1dadd;
+  border-radius: 7px;
+  outline: none;
+  background: #ffffff;
+  color: #10232d;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.form-field input {
+  height: 43px;
+  padding: 0 13px;
+}
+
+.form-field textarea {
+  min-height: 105px;
+  padding: 11px 13px;
+  resize: vertical;
+  line-height: 1.55;
+}
+
+.form-field select {
+  height: 43px;
+  padding: 0 12px;
+  cursor: pointer;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: #9aa6ad;
+}
+
+.form-field input:focus,
+.form-field textarea:focus,
+.form-field select:focus {
+  border-color: #55b043;
+  box-shadow: 0 0 0 3px rgba(85, 176, 67, 0.09);
+}
+
+.form-field input.input-error,
+.form-field textarea.input-error {
+  border-color: #d64545;
+}
+
+.field-help {
+  margin: 6px 0 0;
+  color: #84939a;
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+.field-error {
+  margin-top: 6px;
+  color: #d64545;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.form-two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Draft */
+
+.draft-saved-message {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 2px 24px 20px;
+  padding: 12px 14px;
+  border: 1px solid #b9dcb3;
+  border-radius: 8px;
+  background: #f1f9ef;
+  color: #438f36;
+}
+
+.draft-saved-message svg {
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.draft-saved-message strong {
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.draft-saved-message span {
+  display: block;
+  margin-top: 2px;
+  color: #58705f;
+  font-size: 10px;
+}
+
+/* Actions */
+
+.product-form-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 18px 24px;
+  border-top: 1px solid #e7ecee;
+}
+
+.product-form-actions-right {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.secondary-action,
+.draft-action,
+.primary-action {
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 0 15px;
+  border-radius: 7px;
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease,
+    transform 0.15s ease;
+}
+
+.secondary-action {
+  border: 1px solid #d1dadd;
+  background: #ffffff;
+  color: #52656e;
+}
+
+.secondary-action:hover {
+  border-color: #b8c5ca;
+  background: #f8fafb;
+}
+
+.draft-action {
+  border: 1px solid #cbd6da;
+  background: #ffffff;
+  color: #52656e;
+}
+
+.draft-action:hover {
+  border-color: #55b043;
+  color: #438f36;
+}
+
+.primary-action {
+  border: 1px solid #55b043;
+  background: #55b043;
+  color: #ffffff;
+}
+
+.primary-action:hover {
+  border-color: #438f36;
+  background: #438f36;
+}
+
+/* Right sidebar */
+
+.basic-product-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.information-panel,
+.customer-content-panel,
+.production-note {
+  padding: 18px;
+  border: 1px solid #dce3e6;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(7, 26, 36, 0.035);
+}
+
+.information-panel-icon {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  background: #eef8ec;
+  color: #55b043;
+}
+
+.information-panel h3,
+.customer-content-panel h3 {
+  margin: 0;
+  color: #10232d;
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.information-panel > p,
+.customer-content-panel > p {
+  margin: 7px 0 15px;
+  color: #6c7b82;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.next-step-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.next-step-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 0;
+  border-top: 1px solid #edf0f1;
+}
+
+.next-step-item:first-child {
+  border-top: 0;
+}
+
+.next-step-item > span {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 7px;
+  background: #f1f4f5;
+  color: #84939a;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.next-step-item.current > span {
+  background: #eef8ec;
+  color: #438f36;
+}
+
+.next-step-item strong {
+  display: block;
+  color: #52656e;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.next-step-item.current strong {
+  color: #10232d;
+}
+
+.next-step-item small {
+  display: block;
+  margin-top: 2px;
+  color: #9aa6ad;
+  font-size: 9px;
+}
+
+/* Customer data */
+
+.customer-data-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 9px 0;
+  border-top: 1px solid #edf0f1;
+}
+
+.customer-data-row span {
+  color: #6c7b82;
+  font-size: 10px;
+}
+
+.customer-data-row strong {
+  color: #438f36;
+  font-size: 9px;
+  font-weight: 700;
+  text-align: right;
+}
+
+/* Production note */
+
+.production-note {
+  border-color: #e5e9ea;
+  background: #f8fafb;
+}
+
+.production-note strong {
+  display: block;
+  color: #52656e;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.production-note p {
+  margin: 6px 0 0;
+  color: #84939a;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+/* Responsive */
+
+@media (max-width: 1100px) {
+  .basic-product-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .basic-product-sidebar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .production-note {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 800px) {
+  .basic-product-page {
+    padding: 20px 16px 32px;
+  }
+
+  .product-wizard-header {
+    flex-direction: column;
+  }
+
+  .product-progress {
+    overflow-x: auto;
+  }
+
+  .product-progress-step label {
+    display: none;
+  }
+
+  .product-progress-line {
+    min-width: 25px;
+  }
+
+  .identity-reference-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form-two-column {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .basic-product-sidebar {
+    grid-template-columns: 1fr;
+  }
+
+  .production-note {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  .basic-product-page {
+    padding: 16px 12px 25px;
+  }
+
+  .basic-card-header,
+  .product-form-actions {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .identity-reference {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .form-field {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .identity-reference-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-form-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .product-form-actions-right {
+    width: 100%;
+  }
+
+  .secondary-action,
+  .draft-action,
+  .primary-action {
+    flex: 1;
+  }
+}
+
+
+
+/* =========================================================
+   ARIANIQS VENDOR PORTAL
+   V-05 — TECHNICAL SPECIFICATIONS
+   ========================================================= */
+
+/* =========================================================
+   ARIANIQS VENDOR PORTAL
+   V-05 — TECHNICAL SPECIFICATIONS
+   Production Vendor Portal
+   ========================================================= */
+
+.technical-specifications-page {
+  min-height: 100%;
+  padding: 28px 32px 44px;
+  background: #f5f7f8;
+  color: #10232d;
+}
+
+.technical-specifications-page .product-wizard-shell {
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.technical-specifications-page .product-wizard-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 22px;
+}
+
+.technical-specifications-page .product-step-label {
+  color: #55b043;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+}
+
+.technical-specifications-page .product-wizard-header h1 {
+  margin: 0;
+  color: #10232d;
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 750;
+  letter-spacing: -0.02em;
+}
+
+.technical-specifications-page .product-wizard-header p {
+  max-width: 760px;
+  margin: 8px 0 0;
+  color: #52656e;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* =========================================================
+   STEP BADGE
+   ========================================================= */
+
+.technical-specifications-page .product-step-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+
+  padding: 9px 13px;
+
+  border: 1px solid #cfe2cc;
+  border-radius: 8px;
+
+  background: #f4fbf2;
+  color: #438f36;
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+
+.technical-specifications-page .product-step-badge-dot {
+  width: 7px;
+  height: 7px;
+  flex-shrink: 0;
+
+  border-radius: 50%;
+  background: #55b043;
+}
+
+/* =========================================================
+   PRODUCT PROGRESS
+   ========================================================= */
+
+.technical-specifications-page .product-progress {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  box-sizing: border-box;
+
+  margin-bottom: 22px;
+  padding: 14px 18px;
+
+  overflow-x: auto;
+
+  background: #ffffff;
+  border: 1px solid #dce3e6;
+  border-radius: 10px;
+
+  box-shadow: 0 2px 8px rgba(7, 26, 36, 0.035);
+}
+
+.technical-specifications-page .product-progress-step {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  flex-shrink: 0;
+
+  color: #84939a;
+  font-size: 11px;
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+.technical-specifications-page .product-progress-step .progress-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 27px;
+  height: 27px;
+  flex-shrink: 0;
+
+  border: 1px solid #dce3e6;
+  border-radius: 50%;
+
+  background: #f5f7f8;
+  color: #84939a;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.technical-specifications-page .product-progress-step .progress-label {
+  width: auto;
+  height: auto;
+
+  border: 0;
+  border-radius: 0;
+
+  background: transparent;
+
+  color: inherit;
+
+  font-size: 11px;
+  font-weight: inherit;
+}
+
+.technical-specifications-page
+.product-progress-step.completed {
+  color: #438f36;
+}
+
+.technical-specifications-page
+.product-progress-step.completed
+.progress-number {
+  border-color: #b9dcb3;
+  background: #eef8ec;
+  color: #438f36;
+}
+
+.technical-specifications-page
+.product-progress-step.active {
+  color: #10232d;
+  font-weight: 800;
+}
+
+.technical-specifications-page
+.product-progress-step.active
+.progress-number {
+  border-color: #55b043;
+  background: #55b043;
+  color: #ffffff;
+}
+
+.technical-specifications-page .product-progress-line {
+  flex: 1;
+  min-width: 24px;
+  height: 1px;
+
+  margin: 0 10px;
+
+  background: #dce3e6;
+}
+
+.technical-specifications-page
+.product-progress-line.active {
+  background: #a9d49f;
+}
+
+/* =========================================================
+   PRODUCT IDENTITY SUMMARY
+   ========================================================= */
+
+.technical-specifications-page .features-identity-card {
+  margin-bottom: 20px;
+  padding: 18px 20px;
+
+  background: #ffffff;
+  border: 1px solid #dce3e6;
+  border-radius: 10px;
+
+  box-shadow: 0 2px 8px rgba(7, 26, 36, 0.035);
+}
+
+.technical-specifications-page .features-identity-title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+
+  margin-bottom: 15px;
+}
+
+.technical-specifications-page
+.features-identity-title > div
+> span {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #84939a;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.technical-specifications-page
+.features-identity-title h2 {
+  margin: 0;
+
+  color: #10232d;
+
+  font-size: 15px;
+  font-weight: 750;
+}
+
+.technical-specifications-page .status-badge {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 6px 9px;
+
+  border-radius: 6px;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  white-space: nowrap;
+}
+
+.technical-specifications-page .status-new {
+  border: 1px solid #cfe5ca;
+  background: #f3faf1;
+  color: #438f36;
+}
+
+.technical-specifications-page .features-identity-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 15px;
+}
+
+.technical-specifications-page
+.features-identity-grid > div {
+  min-width: 0;
+  padding-right: 14px;
+
+  border-right: 1px solid #edf1f2;
+}
+
+.technical-specifications-page
+.features-identity-grid > div:last-child {
+  border-right: none;
+}
+
+.technical-specifications-page
+.features-identity-grid span {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #84939a;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.technical-specifications-page
+.features-identity-grid strong {
+  display: block;
+
+  overflow: hidden;
+
+  color: #10232d;
+
+  font-size: 11px;
+  font-weight: 750;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* =========================================================
+   MAIN LAYOUT
+   ========================================================= */
+
+.technical-specifications-page .features-product-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 310px;
+
+  gap: 20px;
+  align-items: start;
+}
+
+.technical-specifications-page .features-product-card {
+  min-width: 0;
+}
+
+/* =========================================================
+   TECHNICAL DATA SECTION
+   ========================================================= */
+
+.technical-specifications-page .features-section {
+  padding: 23px 25px;
+
+  background: #ffffff;
+
+  border: 1px solid #dce3e6;
+  border-radius: 12px;
+
+  box-shadow: 0 2px 8px rgba(7, 26, 36, 0.035);
+}
+
+.technical-specifications-page
+.features-section-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 18px;
+
+  padding-bottom: 17px;
+  margin-bottom: 18px;
+
+  border-bottom: 1px solid #edf1f2;
+}
+
+.technical-specifications-page
+.features-section-label {
+  margin-bottom: 6px;
+
+  color: #55b043;
+
+  font-size: 9px;
+  font-weight: 850;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.technical-specifications-page
+.features-section-header h2 {
+  margin: 0;
+
+  color: #10232d;
+
+  font-size: 18px;
+  line-height: 1.35;
+  font-weight: 750;
+}
+
+.technical-specifications-page
+.features-section-header p {
+  max-width: 700px;
+
+  margin: 6px 0 0;
+
+  color: #52656e;
+
+  font-size: 11px;
+  line-height: 1.55;
+}
+
+.technical-specifications-page .features-count {
+  flex-shrink: 0;
+
+  padding: 6px 9px;
+
+  border: 1px solid #dce3e6;
+  border-radius: 6px;
+
+  background: #f7f9fa;
+  color: #52656e;
+
+  font-size: 10px;
+  font-weight: 750;
+}
+
+/* =========================================================
+   V-04 FINAL PROGRESS NAVIGATOR
+   ========================================================= */
+
+.product-features-page .product-progress {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 56px;
+  margin: 24px 0 28px;
+  padding: 0 4px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.product-features-page .product-progress::-webkit-scrollbar {
+  display: none;
+}
+
+.product-features-page .product-progress-step {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  flex: 0 0 auto;
+  white-space: nowrap;
+  color: #84939a;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.product-features-page .progress-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 27px;
+  height: 27px;
+  flex: 0 0 27px;
+  border: 1px solid #dce3e6;
+  border-radius: 50%;
+  background: #f5f7f8;
+  color: #84939a;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.product-features-page .completed-number {
+  border-color: #b8d9b2;
+  background: #eef8ec;
+  color: #438f36;
+}
+
+.product-features-page .active-number {
+  border-color: #55b043;
+  background: #55b043;
+  color: #ffffff;
+}
+
+.product-features-page .progress-label {
+  color: #84939a;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.product-features-page .completed .progress-label {
+  color: #438f36;
+}
+
+.product-features-page .active .active-label {
+  color: #10232d;
+  font-weight: 800;
+}
+
+.product-features-page .product-progress-line {
+  flex: 1 1 40px;
+  min-width: 25px;
+  height: 1px;
+  margin: 0 10px;
+  background: #dce3e6;
+}
+
+.product-features-page .product-progress-line.completed {
+  background: #a9d19f;
+}
+
+.product-features-page .product-progress-line.active {
+  background: #55b043;
+}
+
+@media (max-width: 900px) {
+  .product-features-page .product-progress {
+    justify-content: flex-start;
+  }
+
+  .product-features-page .product-progress-line {
+    min-width: 20px;
+    margin: 0 6px;
+  }
+}
+
+/* =========================================================
+   V-04 — COMPACT PRODUCT CREATION NAVIGATOR
+   ========================================================= */
+
+.product-features-page .product-wizard-shell .product-progress {
+  display: flex !important;
+  align-items: center !important;
+
+  width: 100% !important;
+  min-height: 42px !important;
+
+  margin: 18px 0 24px !important;
+  padding: 0 2px !important;
+
+  box-sizing: border-box !important;
+
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+
+  scrollbar-width: none !important;
+}
+
+.product-features-page .product-wizard-shell .product-progress::-webkit-scrollbar {
+  display: none !important;
+}
+
+
+/* =========================================================
+   STEP ITEM
+   ========================================================= */
+
+.product-features-page .product-wizard-shell .product-progress-step {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+
+  flex: 0 0 auto !important;
+
+  width: auto !important;
+  min-width: max-content !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  white-space: nowrap !important;
+}
+
+
+/* =========================================================
+   NUMBER / CHECK BUBBLE
+   ========================================================= */
+
+.product-features-page .product-wizard-shell .progress-number {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  width: 15px !important;
+  min-width: 15px !important;
+  max-width: 15px !important;
+
+  height: 15px !important;
+  min-height: 15px !important;
+  max-height: 15px !important;
+
+  padding: 0 !important;
+  margin: 0 !important;
+
+  box-sizing: border-box !important;
+
+  border: 1px solid #d9e1e4 !important;
+  border-radius: 50% !important;
+
+  background: #f5f7f8 !important;
+  color: #8b989e !important;
+
+  font-size: 9px !important;
+  line-height: 1 !important;
+  font-weight: 800 !important;
+
+  flex-shrink: 0 !important;
+}
+
+
+/* =========================================================
+   COMPLETED BUBBLE
+   ========================================================= */
+
+.product-features-page
+.product-wizard-shell
+.product-progress-step.completed
+.progress-number.completed-number {
+  border-color: #a9d39f !important;
+  background: #edf8eb !important;
+  color: #438f36 !important;
+}
+
+
+/* =========================================================
+   ACTIVE BUBBLE
+   ========================================================= */
+
+.product-features-page
+.product-wizard-shell
+.product-progress-step.active
+.progress-number.active-number {
+  border-color: #55b043 !important;
+  background: #55b043 !important;
+  color: #ffffff !important;
+
+  box-shadow: 0 0 0 3px rgba(85, 176, 67, 0.08) !important;
+}
+
+
+/* =========================================================
+   LABEL
+   ========================================================= */
+
+.product-features-page .product-wizard-shell .progress-label {
+  display: inline-block !important;
+
+  width: auto !important;
+  min-width: max-content !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  color: #89969c !important;
+
+  font-size: 9px !important;
+  line-height: 1.2 !important;
+  font-weight: 700 !important;
+
+  white-space: nowrap !important;
+}
+
+
+/* =========================================================
+   COMPLETED LABEL
+   ========================================================= */
+
+.product-features-page
+.product-wizard-shell
+.product-progress-step.completed
+.progress-label {
+  color: #438f36 !important;
+}
+
+
+/* =========================================================
+   ACTIVE LABEL
+   ========================================================= */
+
+.product-features-page
+.product-wizard-shell
+.product-progress-step.active
+.progress-label.active-label {
+  color: #10232d !important;
+  font-weight: 800 !important;
+}
+
+
+/* =========================================================
+   CONNECTING LINE
+   ========================================================= */
+
+.product-features-page .product-wizard-shell .product-progress-line {
+  display: block !important;
+
+  flex: 1 1 32px !important;
+
+  width: auto !important;
+  min-width: 22px !important;
+
+  height: 1px !important;
+
+  margin: 0 7px !important;
+  padding: 0 !important;
+
+  background: #dce3e6 !important;
+
+  flex-shrink: 1 !important;
+}
+
+
+/* =========================================================
+   COMPLETED LINE
+   ========================================================= */
+
+.product-features-page
+.product-wizard-shell
+.product-progress-line.completed {
+  background: #a9d19f !important;
+}
+
+
+/* =========================================================
+   ACTIVE LINE
+   ========================================================= */
+
+.product-features-page
+.product-wizard-shell
+.product-progress-line.active {
+  background: #55b043 !important;
+}
+
+
+/* =========================================================
+   UPCOMING STEPS
+   ========================================================= */
+
+.product-features-page
+.product-wizard-shell
+.product-progress-step:not(.completed):not(.active)
+.progress-number {
+  border-color: #d9e1e4 !important;
+  background: #f5f7f8 !important;
+  color: #8b989e !important;
+}
+
+.product-features-page
+.product-wizard-shell
+.product-progress-step:not(.completed):not(.active)
+.progress-label {
+  color: #89969c !important;
+}
+
+
+/* =========================================================
+   V-04 RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+  .product-features-page .product-wizard-shell .product-progress {
+    justify-content: flex-start !important;
+  }
+
+  .product-features-page
+  .product-wizard-shell
+  .product-progress-line {
+    min-width: 20px !important;
+    margin-left: 6px !important;
+    margin-right: 6px !important;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+  .product-features-page .product-wizard-shell .product-progress {
+    min-height: 38px !important;
+    margin: 15px 0 20px !important;
+  }
+
+  .product-features-page
+  .product-wizard-shell
+  .progress-number {
+    width: 22px !important;
+    min-width: 22px !important;
+
+    height: 22px !important;
+    min-height: 22px !important;
+
+    font-size: 8px !important;
+  }
+
+  .product-features-page
+  .product-wizard-shell
+  .progress-label {
+    font-size: 8px !important;
+  }
+
+  .product-features-page
+  .product-wizard-shell
+  .product-progress-line {
+    min-width: 16px !important;
+
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+  }
+}
+
+
+
+
+
+/* =========================================================
+   SPECIFICATION TABLE HEADER
+   5 COLUMNS:
+   # | Specification | Value | Unit | Action
+   ========================================================= */
+
+/* ============================================================
+   ARIANIQS V-05 — TECHNICAL SPECIFICATIONS
+   Production UI
+   SAME VISUAL SYSTEM AS V-04
+   ============================================================ */
+
+.technical-specifications-page {
+  min-height: 100%;
+  background: #f5f7f8;
+  padding: 28px 32px 44px;
+}
+
+.technical-specifications-page .product-wizard-shell {
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto;
+}
+
+/* ============================================================
+   HEADER — SAME AS V-04
+   ============================================================ */
+
+.technical-specifications-page .product-wizard-header {
+  display: block !important;
+  width: 100% !important;
+
+  margin: 0 0 24px 0 !important;
+  padding: 0 !important;
+
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.technical-specifications-page .product-step-label {
+  display: block !important;
+
+  margin: 0 0 6px 0 !important;
+  padding: 0 !important;
+
+  color: #55a846 !important;
+
+  font-size: 11px !important;
+  font-weight: 800 !important;
+
+  line-height: 1.2 !important;
+  letter-spacing: 0.08em !important;
+
+  text-transform: uppercase !important;
+}
+
+.technical-specifications-page .product-step-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+
+  gap: 7px !important;
+
+  margin: 0 0 9px 0 !important;
+  padding: 5px 9px !important;
+
+  background: #ffffff !important;
+
+  border: 1px solid #dce3e6 !important;
+  border-radius: 6px !important;
+
+  color: #53646c !important;
+
+  font-size: 11px !important;
+  font-weight: 700 !important;
+
+  line-height: 1.2 !important;
+}
+
+.technical-specifications-page .product-step-badge-dot {
+  display: inline-block !important;
+
+  width: 7px !important;
+  height: 7px !important;
+  min-width: 7px !important;
+
+  border-radius: 50% !important;
+
+  background: #55a846 !important;
+}
+
+.technical-specifications-page .product-wizard-header h1 {
+  display: block !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  color: #10232d !important;
+
+  font-size: 28px !important;
+  font-weight: 800 !important;
+
+  line-height: 1.2 !important;
+}
+
+.technical-specifications-page .product-wizard-header p {
+  display: block !important;
+
+  max-width: 760px !important;
+
+  margin: 8px 0 0 0 !important;
+  padding: 0 !important;
+
+  color: #65757d !important;
+
+  font-size: 14px !important;
+  font-weight: 400 !important;
+
+  line-height: 1.6 !important;
+}
+
+/* ============================================================
+   PROGRESS NAVIGATOR — SAME AS V-04
+   ============================================================ */
+
+.technical-specifications-page .product-progress {
+  display: flex !important;
+  align-items: center !important;
+
+  width: 100% !important;
+  min-height: 52px !important;
+
+  margin: 18px 0 22px !important;
+  padding: 11px 16px !important;
+
+  box-sizing: border-box !important;
+
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+
+  background: #ffffff !important;
+
+  border: 1px solid #dce3e6 !important;
+  border-radius: 10px !important;
+
+  box-shadow:
+    0 2px 8px rgba(7, 26, 36, 0.035) !important;
+
+  scrollbar-width: none !important;
+}
+
+.technical-specifications-page
+.product-progress::-webkit-scrollbar {
+  display: none !important;
+}
+
+/* ============================================================
+   PROGRESS STEP
+   ============================================================ */
+
+.technical-specifications-page .product-progress-step {
+  display: flex !important;
+  align-items: center !important;
+
+  gap: 8px !important;
+
+  flex: 0 0 auto !important;
+
+  width: auto !important;
+  min-width: max-content !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  color: #84939a !important;
+
+  font-size: 11px !important;
+  font-weight: 700 !important;
+
+  white-space: nowrap !important;
+}
+
+/* ============================================================
+   PROGRESS NUMBER
+   ============================================================ */
+
+.technical-specifications-page
+.product-progress-step
+.progress-number {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  width: 27px !important;
+  height: 27px !important;
+
+  min-width: 27px !important;
+  min-height: 27px !important;
+
+  flex-shrink: 0 !important;
+
+  box-sizing: border-box !important;
+
+  border: 1px solid #dce3e6 !important;
+  border-radius: 50% !important;
+
+  background: #f5f7f8 !important;
+  color: #84939a !important;
+
+  font-size: 11px !important;
+  font-weight: 800 !important;
+
+  line-height: 1 !important;
+}
+
+/* ============================================================
+   PROGRESS LABEL
+   ============================================================ */
+
+.technical-specifications-page
+.product-progress-step
+.progress-label {
+  width: auto !important;
+  height: auto !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  border: 0 !important;
+  border-radius: 0 !important;
+
+  background: transparent !important;
+
+  color: inherit !important;
+
+  font-size: 11px !important;
+  font-weight: inherit !important;
+
+  line-height: 1.2 !important;
+
+  white-space: nowrap !important;
+}
+
+/* ============================================================
+   COMPLETED STEP
+   ============================================================ */
+
+.technical-specifications-page
+.product-progress-step.completed {
+  color: #438f36 !important;
+}
+
+.technical-specifications-page
+.product-progress-step.completed
+.progress-number {
+  border-color: #b9dcb3 !important;
+
+  background: #eef8ec !important;
+
+  color: #438f36 !important;
+}
+
+/* ============================================================
+   ACTIVE STEP
+   ============================================================ */
+
+.technical-specifications-page
+.product-progress-step.active {
+  color: #10232d !important;
+
+  font-weight: 800 !important;
+}
+
+.technical-specifications-page
+.product-progress-step.active
+.progress-number {
+  border-color: #55b043 !important;
+
+  background: #55b043 !important;
+
+  color: #ffffff !important;
+}
+
+/* ============================================================
+   PROGRESS LINE
+   ============================================================ */
+
+.technical-specifications-page .product-progress-line {
+  flex: 1 1 30px !important;
+
+  min-width: 28px !important;
+
+  height: 1px !important;
+
+  margin: 0 10px !important;
+
+  background: #dce3e6 !important;
+}
+
+.technical-specifications-page
+.product-progress-line.active {
+  background: #a9d49f !important;
+}
+
+/* ============================================================
+   PRODUCT IDENTITY SUMMARY
+   SAME STYLE AS V-04
+   ============================================================ */
+
+.technical-specifications-page .features-identity-card {
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 0;
+
+  margin-bottom: 18px;
+  padding: 18px 20px;
+
+  border: 1px solid #dce3e6;
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 2px 8px rgba(7, 26, 36, 0.035);
+}
+
+.technical-specifications-page
+.features-identity-card > div {
+  min-width: 0;
+
+  padding: 0 18px;
+
+  border-right: 1px solid #edf1f2;
+}
+
+.technical-specifications-page
+.features-identity-card > div:first-child {
+  padding-left: 0;
+}
+
+.technical-specifications-page
+.features-identity-card > div:last-child {
+  padding-right: 0;
+
+  border-right: none;
+}
+
+/* PRODUCT IDENTITY TITLE */
+
+.technical-specifications-page
+.features-identity-title {
+  display: flex;
+
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 16px;
+
+  grid-column: 1 / -1;
+
+  margin-bottom: 15px;
+
+  padding: 0 0 15px;
+
+  border-bottom: 1px solid #edf1f2;
+}
+
+.technical-specifications-page
+.features-identity-title > div {
+  min-width: 0;
+}
+
+.technical-specifications-page
+.features-identity-title > div > span {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #84939a;
+
+  font-size: 10px;
+  font-weight: 750;
+
+  letter-spacing: 0.06em;
+
+  text-transform: uppercase;
+}
+
+.technical-specifications-page
+.features-identity-title h2 {
+  margin: 0;
+
+  overflow: hidden;
+
+  color: #10232d;
+
+  font-size: 15px;
+  font-weight: 750;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ============================================================
+   STATUS BADGE
+   ============================================================ */
+
+.technical-specifications-page .status-badge {
+  display: inline-flex;
+
+  align-items: center;
+
+  flex-shrink: 0;
+
+  padding: 6px 9px;
+
+  border-radius: 6px;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  white-space: nowrap;
+}
+
+.technical-specifications-page .status-new {
+  border: 1px solid #cfe5ca;
+
+  background: #f3faf1;
+
+  color: #438f36;
+}
+
+/* ============================================================
+   IDENTITY GRID
+   ============================================================ */
+
+.technical-specifications-page
+.features-identity-grid {
+  display: grid;
+
+  grid-column: 1 / -1;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 0;
+}
+
+.technical-specifications-page
+.features-identity-grid > div {
+  min-width: 0;
+
+  padding: 0 18px;
+
+  border-right: 1px solid #edf1f2;
+}
+
+.technical-specifications-page
+.features-identity-grid > div:first-child {
+  padding-left: 0;
+}
+
+.technical-specifications-page
+.features-identity-grid > div:last-child {
+  padding-right: 0;
+
+  border-right: none;
+}
+
+.technical-specifications-page
+.features-identity-grid span {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #84939a;
+
+  font-size: 10px;
+  font-weight: 750;
+
+  letter-spacing: 0.06em;
+
+  text-transform: uppercase;
+}
+
+.technical-specifications-page
+.features-identity-grid strong {
+  display: block;
+
+  overflow: hidden;
+
+  color: #10232d;
+
+  font-size: 13px;
+  font-weight: 750;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ============================================================
+   MAIN LAYOUT
+   ============================================================ */
+
+.technical-specifications-page
+.features-product-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    320px;
+
+  align-items: start;
+
+  gap: 20px;
+}
+
+.technical-specifications-page
+.features-product-card {
+  min-width: 0;
+
+  overflow: hidden;
+
+  border: 1px solid #dce3e6;
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 2px 8px rgba(7, 26, 36, 0.035);
+}
+
+/* ============================================================
+   TECHNICAL SECTION
+   ============================================================ */
+
+.technical-specifications-page
+.features-section {
+  padding: 24px 26px 25px;
+
+  border-bottom: 1px solid #e8edef;
+}
+
+.technical-specifications-page
+.features-section:last-child {
+  border-bottom: none;
+}
+
+.technical-specifications-page
+.features-section-header {
+  display: flex;
+
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  margin-bottom: 16px;
+}
+
+.technical-specifications-page
+.features-section-label {
+  margin-bottom: 6px;
+
+  color: #55b043;
+
+  font-size: 10px;
+  font-weight: 850;
+
+  letter-spacing: 0.1em;
+
+  text-transform: uppercase;
+}
+
+.technical-specifications-page
+.features-section-header h2 {
+  margin: 0;
+
+  color: #10232d;
+
+  font-size: 18px;
+  line-height: 1.35;
+
+  font-weight: 750;
+}
+
+.technical-specifications-page
+.features-section-header p {
+  max-width: 700px;
+
+  margin: 6px 0 0;
+
+  color: #52656e;
+
+  font-size: 13px;
+
+  line-height: 1.55;
+}
+
+.technical-specifications-page
+.features-count {
+  flex-shrink: 0;
+
+  padding: 6px 9px;
+
+  border: 1px solid #dce3e6;
+  border-radius: 6px;
+
+  background: #f7f9fa;
+
+  color: #52656e;
+
+  font-size: 11px;
+  font-weight: 750;
+}
+
+/* ============================================================
+   SPECIFICATION TABLE HEADER
+   ============================================================ */
+
+.technical-specifications-page
+.v04-specification-header {
+  display: grid;
+
+  grid-template-columns:
+    42px
+    minmax(180px, 1.3fr)
+    minmax(160px, 1fr)
+    120px
+    50px;
+
+  gap: 10px;
+
+  padding: 0 10px 8px;
+
+  color: #84939a;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 0.05em;
+
+  text-transform: uppercase;
+}
+
+/* ============================================================
+   SPECIFICATION LIST
+   ============================================================ */
+
+.technical-specifications-page
+.v04-specification-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 9px;
+}
+
+/* ============================================================
+   SPECIFICATION ROW
+   ============================================================ */
+
+.technical-specifications-page
+.v04-specification-row {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns:
+    42px
+    minmax(180px, 1.3fr)
+    minmax(160px, 1fr)
+    120px
+    50px;
+
+  gap: 10px;
+
+  align-items: start;
+
+  padding: 10px;
+
+  background: #ffffff;
+
+  border: 1px solid #dce3e6;
+  border-radius: 8px;
+
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease,
+    background 0.15s ease;
+}
+
+.technical-specifications-page
+.v04-specification-row:hover {
+  border-color: #bfd9bb;
+
+  background: #fcfefd;
+}
+
+.technical-specifications-page
+.v04-specification-row:focus-within {
+  border-color: #55b043;
+
+  box-shadow:
+    0 0 0 3px rgba(85, 176, 67, 0.1);
+}
+
+/* ============================================================
+   ROW NUMBER
+   ============================================================ */
+
+.technical-specifications-page
+.v04-row-number {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+
+  margin-top: 20px;
+
+  border-radius: 6px;
+
+  background: #f1f6f1;
+
+  color: #52656e;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+/* ============================================================
+   SPECIFICATION FIELD
+   ============================================================ */
+
+.technical-specifications-page
+.v04-specification-field {
+  min-width: 0;
+}
+
+.technical-specifications-page
+.v04-specification-field label {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #52656e;
+
+  font-size: 10px;
+  font-weight: 750;
+}
+
+/* ============================================================
+   INPUT WRAPPER
+   ============================================================ */
+
+.technical-specifications-page
+.v04-specification-input-wrapper {
+  position: relative;
+
+  min-width: 0;
+}
+
+/* ============================================================
+   INPUT
+   ============================================================ */
+
+.technical-specifications-page
+.v04-specification-field input {
+  width: 100%;
+  height: 42px;
+
+  padding: 0 72px 0 12px;
+
+  box-sizing: border-box;
+
+  outline: none;
+
+  border: 1px solid #dce3e6;
+  border-radius: 7px;
+
+  background: #ffffff;
+
+  color: #10232d;
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  line-height: 1.4;
+
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.technical-specifications-page
+.v04-specification-field input::placeholder {
+  color: #9aa6ab;
+}
+
+.technical-specifications-page
+.v04-specification-field input:hover {
+  border-color: #c7d3d7;
+}
+
+.technical-specifications-page
+.v04-specification-field input:focus {
+  border-color: #55b043;
+
+  box-shadow:
+    0 0 0 2px rgba(85, 176, 67, 0.08);
+}
+
+/* ============================================================
+   CHARACTER COUNT
+   ============================================================ */
+
+.technical-specifications-page
+.v04-character-count {
+  position: absolute;
+
+  top: 50%;
+  right: 10px;
+
+  transform: translateY(-50%);
+
+  color: #84939a;
+
+  font-size: 10px;
+  font-weight: 650;
+
+  pointer-events: none;
+
+  white-space: nowrap;
+}
+
+/* ============================================================
+   UNIT FIELD
+   ============================================================ */
+
+.technical-specifications-page
+.v04-unit-field input {
+  padding-right: 12px;
+}
+
+/* ============================================================
+   REMOVE BUTTON
+   ============================================================ */
+
+.technical-specifications-page
+.v04-remove-button {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 34px;
+  height: 34px;
+
+  margin-top: 20px;
+
+  padding: 0;
+
+  border: 1px solid transparent;
+  border-radius: 7px;
+
+  background: transparent;
+
+  color: #84939a;
+
+  cursor: pointer;
+
+  transition:
+    color 0.15s ease,
+    background 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.technical-specifications-page
+.v04-remove-button:hover:not(:disabled) {
+  border-color: #f0d1d1;
+
+  background: #fff5f5;
+
+  color: #d64545;
+}
+
+.technical-specifications-page
+.v04-remove-button:disabled {
+  opacity: 0.28;
+
+  cursor: not-allowed;
+}
+
+/* ============================================================
+   ERROR
+   ============================================================ */
+
+.technical-specifications-page
+.v04-specification-error {
+  grid-column: 2 / -1;
+
+  margin-top: -3px;
+
+  color: #d64545;
+
+  font-size: 12px;
+
+  font-weight: 650;
+}
+
+.technical-specifications-page
+.features-error {
+  margin-top: 9px;
+
+  color: #d64545;
+
+  font-size: 12px;
+
+  font-weight: 650;
+}
+
+/* ============================================================
+   ADD SPECIFICATION
+   ============================================================ */
+
+.technical-specifications-page
+.add-repeatable-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  margin-top: 12px;
+
+  padding: 8px 12px;
+
+  border: 1px solid #b8d9b2;
+  border-radius: 7px;
+
+  background: #f4faf2;
+
+  color: #438f36;
+
+  font-family: inherit;
+
+  font-size: 12px;
+  font-weight: 750;
+
+  cursor: pointer;
+
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.technical-specifications-page
+.add-repeatable-button:hover:not(:disabled) {
+  border-color: #55b043;
+
+  background: #eaf6e7;
+
+  color: #367d2e;
+}
+
+.technical-specifications-page
+.add-repeatable-button:disabled {
+  opacity: 0.45;
+
+  cursor: not-allowed;
+}
+
+/* ============================================================
+   LIMIT NOTE
+   ============================================================ */
+
+.technical-specifications-page
+.v04-limit-note {
+  display: inline-block;
+
+  margin-top: 12px;
+
+  color: #84939a;
+
+  font-size: 10px;
+
+  line-height: 1.4;
+}
+
+/* ============================================================
+   EXAMPLES
+   ============================================================ */
+
+.technical-specifications-page
+.technical-example-section {
+  margin-top: 18px;
+
+  padding: 17px;
+
+  border: 1px solid #dce3e6;
+  border-radius: 9px;
+
+  background: #f9fbfb;
+}
+
+.technical-specifications-page
+.technical-example-section h3 {
+  margin: 0 0 5px;
+
+  color: #10232d;
+
+  font-size: 12px;
+
+  font-weight: 750;
+}
+
+.technical-specifications-page
+.technical-example-section > p {
+  margin: 0 0 13px;
+
+  color: #84939a;
+
+  font-size: 10px;
+
+  line-height: 1.5;
+}
+
+.technical-specifications-page
+.technical-example-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 8px;
+}
+
+.technical-specifications-page
+.technical-example-item {
+  padding: 11px 12px;
+
+  border: 1px solid #e1e7e9;
+  border-radius: 7px;
+
+  background: #ffffff;
+}
+
+.technical-specifications-page
+.technical-example-item strong {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #10232d;
+
+  font-size: 10px;
+
+  font-weight: 750;
+}
+
+.technical-specifications-page
+.technical-example-item span {
+  color: #438f36;
+
+  font-size: 12px;
+
+  font-weight: 750;
+}
+
+.technical-specifications-page
+.technical-example-item small {
+  margin-left: 5px;
+
+  color: #84939a;
+
+  font-size: 9px;
+}
+
+/* ============================================================
+   SIDEBAR
+   ============================================================ */
+
+.technical-specifications-page
+.features-product-sidebar {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 14px;
+}
+
+.technical-specifications-page
+.information-panel,
+.technical-specifications-page
+.customer-content-panel,
+.technical-specifications-page
+.technical-status-panel,
+.technical-specifications-page
+.production-note {
+  border: 1px solid #dce3e6;
+
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 2px 8px rgba(7, 26, 36, 0.03);
+}
+
+/* ============================================================
+   INFORMATION PANEL
+   ============================================================ */
+
+.technical-specifications-page
+.information-panel {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 12px;
+
+  padding: 18px;
+}
+
+.technical-specifications-page
+.information-panel-icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 34px;
+  height: 34px;
+
+  flex-shrink: 0;
+
+  border-radius: 8px;
+
+  background: #edf8eb;
+
+  color: #438f36;
+}
+
+.technical-specifications-page
+.information-panel h3 {
+  margin: 0;
+
+  color: #10232d;
+
+  font-size: 14px;
+
+  font-weight: 750;
+}
+
+.technical-specifications-page
+.information-panel > p {
+  margin: 7px 0 0;
+
+  color: #52656e;
+
+  font-size: 12px;
+
+  line-height: 1.55;
+}
+
+/* ============================================================
+   NEXT STEP LIST
+   ============================================================ */
+
+.technical-specifications-page
+.next-step-list {
+  width: 100%;
+
+  margin-top: 15px;
+
+  border-top: 1px solid #edf1f2;
+}
+
+.technical-specifications-page
+.next-step-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 10px 0;
+
+  border-bottom: 1px solid #edf1f2;
+}
+
+.technical-specifications-page
+.next-step-item:last-child {
+  border-bottom: none;
+}
+
+.technical-specifications-page
+.next-step-item > span {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 28px;
+  height: 28px;
+
+  flex-shrink: 0;
+
+  border-radius: 7px;
+
+  background: #f1f4f5;
+
+  color: #84939a;
+
+  font-size: 9px;
+
+  font-weight: 800;
+}
+
+.technical-specifications-page
+.next-step-item strong {
+  display: block;
+
+  color: #52656e;
+
+  font-size: 10px;
+
+  font-weight: 750;
+}
+
+.technical-specifications-page
+.next-step-item small {
+  display: block;
+
+  margin-top: 2px;
+
+  color: #9aa6ad;
+
+  font-size: 9px;
+}
+
+/* ============================================================
+   CUSTOMER CONTENT
+   ============================================================ */
+
+.technical-specifications-page
+.customer-content-panel {
+  padding: 19px;
+}
+
+.technical-specifications-page
+.customer-content-panel h3 {
+  margin: 0 0 10px;
+
+  color: #10232d;
+
+  font-size: 14px;
+
+  font-weight: 750;
+}
+
+.technical-specifications-page
+.customer-data-row {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 12px;
+
+  padding: 9px 0;
+
+  border-top: 1px solid #edf1f2;
+}
+
+.technical-specifications-page
+.customer-data-row span {
+  color: #52656e;
+
+  font-size: 11px;
+}
+
+.technical-specifications-page
+.customer-data-row strong {
+  max-width: 150px;
+
+  overflow: hidden;
+
+  color: #438f36;
+
+  font-size: 11px;
+
+  font-weight: 750;
+
+  text-align: right;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+}
+
+/* ============================================================
+   TECHNICAL STATUS
+   ============================================================ */
+
+.technical-specifications-page
+.technical-status-panel {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 18px;
+}
+
+.technical-specifications-page
+.technical-status-icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 32px;
+  height: 32px;
+
+  flex-shrink: 0;
+
+  border-radius: 7px;
+
+  background: #edf8eb;
+
+  color: #438f36;
+}
+
+.technical-specifications-page
+.technical-status-panel strong {
+  display: block;
+
+  color: #10232d;
+
+  font-size: 11px;
+
+  font-weight: 750;
+}
+
+.technical-specifications-page
+.technical-status-panel span {
+  display: block;
+
+  margin-top: 3px;
+
+  color: #84939a;
+
+  font-size: 10px;
+}
+
+/* ============================================================
+   PRODUCTION NOTE
+   ============================================================ */
+
+.technical-specifications-page
+.production-note {
+  padding: 16px 18px;
+
+  background: #f9fafb;
+}
+
+.technical-specifications-page
+.production-note strong {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #10232d;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.06em;
+
+  text-transform: uppercase;
+}
+
+.technical-specifications-page
+.production-note p {
+  margin: 0;
+
+  color: #84939a;
+
+  font-size: 10px;
+
+  line-height: 1.55;
+}
+
+/* ============================================================
+   ACTION BAR
+   ============================================================ */
+
+.technical-specifications-page
+.product-form-actions {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 16px;
+
+  margin-top: 20px;
+
+  padding: 15px 0;
+}
+
+.technical-specifications-page
+.product-form-actions-right {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+}
+
+.technical-specifications-page
+.draft-saved-message {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  color: #438f36;
+
+  font-size: 10px;
+
+  font-weight: 700;
+}
+
+/* ============================================================
+   ACTION BUTTONS
+   ============================================================ */
+
+.technical-specifications-page
+.secondary-action,
+.technical-specifications-page
+.draft-action,
+.technical-specifications-page
+.primary-action {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  min-height: 40px;
+
+  padding: 0 15px;
+
+  border-radius: 7px;
+
+  font-family: inherit;
+
+  font-size: 12px;
+
+  font-weight: 750;
+
+  cursor: pointer;
+
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease,
+    transform 0.1s ease;
+}
+
+.technical-specifications-page
+.secondary-action:active,
+.technical-specifications-page
+.draft-action:active,
+.technical-specifications-page
+.primary-action:active {
+  transform: translateY(1px);
+}
+
+/* BACK */
+
+.technical-specifications-page
+.secondary-action {
+  border: 1px solid #d4dee1;
+
+  background: #ffffff;
+
+  color: #52656e;
+}
+
+.technical-specifications-page
+.secondary-action:hover {
+  border-color: #b9c8cc;
+
+  background: #f7f9fa;
+
+  color: #10232d;
+}
+
+/* SAVE DRAFT */
+
+.technical-specifications-page
+.draft-action {
+  border: 1px solid #cdd9dd;
+
+  background: #ffffff;
+
+  color: #52656e;
+}
+
+.technical-specifications-page
+.draft-action:hover {
+  border-color: #aebec3;
+
+  background: #f6f8f9;
+
+  color: #10232d;
+}
+
+/* NEXT */
+
+.technical-specifications-page
+.primary-action {
+  border: 1px solid #55b043;
+
+  background: #55b043;
+
+  color: #ffffff;
+}
+
+.technical-specifications-page
+.primary-action:hover {
+  border-color: #438f36;
+
+  background: #438f36;
+}
+
+/* ============================================================
+   RESPONSIVE — 1200px
+   ============================================================ */
+
+@media (max-width: 1200px) {
+
+  .technical-specifications-page {
+    padding: 24px 26px 38px;
+  }
+
+  .technical-specifications-page
+  .features-product-layout {
+    grid-template-columns:
+      minmax(0, 1fr)
+      290px;
+  }
+
+  .technical-specifications-page
+  .features-identity-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    row-gap: 14px;
+  }
+
+  .technical-specifications-page
+  .features-identity-grid > div:nth-child(2) {
+    border-right: none;
+  }
+
+  .technical-specifications-page
+  .features-identity-grid > div:nth-child(3) {
+    padding-left: 0;
+  }
+
+  .technical-specifications-page
+  .features-identity-grid > div:nth-child(4) {
+    padding-right: 0;
+  }
+
+  .technical-specifications-page
+  .v04-specification-header,
+  .technical-specifications-page
+  .v04-specification-row {
+    grid-template-columns:
+      36px
+      minmax(150px, 1.2fr)
+      minmax(140px, 1fr)
+      100px
+      45px;
+  }
+}
+
+/* ============================================================
+   RESPONSIVE — 950px
+   ============================================================ */
+
+@media (max-width: 950px) {
+
+  .technical-specifications-page
+  .features-product-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .technical-specifications-page
+  .features-product-sidebar {
+    display: grid;
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .technical-specifications-page
+  .production-note {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ============================================================
+   RESPONSIVE — 700px
+   ============================================================ */
+
+@media (max-width: 600px) {
+
+  .technical-specifications-page {
+    padding: 18px 14px 30px;
+  }
+
+  .technical-specifications-page
+  .product-wizard-header h1 {
+    font-size: 24px;
+  }
+
+  .technical-specifications-page
+  .product-progress {
+    min-height: 52px !important;
+
+    margin-top: 18px !important;
+    margin-bottom: 22px !important;
+
+    padding: 11px 12px !important;
+  }
+
+  .technical-specifications-page
+  .product-progress-step
+  .progress-number {
+    width: 27px !important;
+    min-width: 27px !important;
+
+    height: 27px !important;
+    min-height: 27px !important;
+  }
+
+  .technical-specifications-page
+  .product-progress-step
+  .progress-label {
+    font-size: 10px !important;
+  }
+
+  .technical-specifications-page
+  .product-progress-line {
+    min-width: 20px !important;
+
+    margin-left: 6px !important;
+    margin-right: 6px !important;
+  }
+
+  .technical-specifications-page
+  .features-identity-card {
+    grid-template-columns: 1fr;
+
+    gap: 0;
+
+    padding: 16px;
+  }
+
+  .technical-specifications-page
+  .features-identity-title {
+    grid-column: auto;
+  }
+
+  .technical-specifications-page
+  .features-identity-grid {
+    grid-column: auto;
+
+    grid-template-columns: 1fr;
+  }
+
+  .technical-specifications-page
+  .features-identity-grid > div,
+  .technical-specifications-page
+  .features-identity-grid > div:nth-child(3),
+  .technical-specifications-page
+  .features-identity-grid > div:nth-child(4) {
+    padding: 10px 0;
+
+    border-right: none;
+    border-bottom: 1px solid #edf1f2;
+  }
+
+  .technical-specifications-page
+  .features-identity-grid > div:first-child {
+    padding-top: 0;
+  }
+
+  .technical-specifications-page
+  .features-identity-grid > div:last-child {
+    padding-bottom: 0;
+
+    border-bottom: none;
+  }
+
+  .technical-specifications-page
+  .features-section {
+    padding: 20px 16px;
+  }
+
+  .technical-specifications-page
+  .features-section-header {
+    flex-direction: column;
+
+    gap: 10px;
+  }
+
+  .technical-specifications-page
+  .v04-specification-header {
+    display: none;
+  }
+
+  .technical-specifications-page
+  .v04-specification-row {
+    grid-template-columns:
+      30px
+      minmax(0, 1fr)
+      34px;
+
+    gap: 7px;
+
+    padding: 6px;
+  }
+
+  .technical-specifications-page
+  .v04-row-number {
+    width: 27px;
+    height: 27px;
+
+    margin-top: 20px;
+  }
+
+  .technical-specifications-page
+  .v04-character-count {
+    display: none;
+  }
+
+  .technical-specifications-page
+  .v04-specification-field input {
+    padding-right: 12px;
+  }
+
+  .technical-specifications-page
+  .v04-remove-button {
+    width: 34px;
+
+    margin-top: 20px;
+  }
+
+  .technical-specifications-page
+  .v04-specification-error {
+    grid-column: 2 / -1;
+  }
+
+  .technical-specifications-page
+  .technical-example-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .technical-specifications-page
+  .features-product-sidebar {
+    display: flex;
+  }
+
+  .technical-specifications-page
+  .product-form-actions {
+    flex-direction: column-reverse;
+
+    align-items: stretch;
+
+    gap: 10px;
+
+    padding: 16px 0;
+  }
+
+  .technical-specifications-page
+  .product-form-actions-right {
+    width: 100%;
+  }
+
+  .technical-specifications-page
+  .secondary-action,
+  .technical-specifications-page
+  .draft-action,
+  .technical-specifications-page
+  .primary-action {
+    flex: 1;
+  }
+}

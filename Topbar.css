@@ -1,0 +1,372 @@
+/* ========================================================= 
+   ARIANIQS VENDOR PORTAL — TOPBAR 
+   Compact Production Layout 
+   ========================================================= */ 
+ 
+.vendor-topbar { 
+  position: sticky; 
+  top: 0; 
+  z-index: 100; 
+ 
+  height: 54px; 
+  min-height: 54px; 
+ 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+ 
+  padding: 0 18px; 
+ 
+  background: #ffffff; 
+  border-bottom: 1px solid #e3e8ea; 
+ 
+  box-shadow: 0 1px 5px rgba(7, 26, 36, 0.035); 
+} 
+ 
+ 
+/* --------------------------------------------------------- 
+   LEFT AREA 
+   --------------------------------------------------------- */ 
+ 
+.topbar-left { 
+  display: flex; 
+  align-items: center; 
+  gap: 10px; 
+ 
+  flex: 0 0 auto; 
+  min-width: 160px; 
+} 
+ 
+.topbar-brand-mark { 
+  width: 29px; 
+  height: 29px; 
+ 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+ 
+  border-radius: 6px; 
+ 
+  background: #55b043; 
+  color: #ffffff; 
+ 
+  font-size: 11px; 
+  font-weight: 800; 
+} 
+ 
+.topbar-page-info { 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+ 
+  min-width: 0; 
+} 
+ 
+.topbar-page-title { 
+  margin: 0; 
+ 
+  color: #10232d; 
+ 
+  font-size: 12px; 
+  font-weight: 750; 
+  line-height: 1.2; 
+} 
+ 
+.topbar-page-subtitle { 
+  margin-top: 1px; 
+ 
+  color: #84939a; 
+ 
+  font-size: 9px; 
+  line-height: 1.2; 
+} 
+ 
+ 
+/* --------------------------------------------------------- 
+   SEARCH 
+   --------------------------------------------------------- */ 
+ 
+.global-search { 
+  position: relative; 
+ 
+  flex: 1 1 auto; 
+ 
+  width: 100%; 
+  min-width: 170px; 
+  max-width: 450px; 
+ 
+  height: 35px; 
+ 
+  margin: 0 18px; 
+} 
+ 
+.global-search input { 
+  width: 100%; 
+  height: 35px; 
+ 
+  padding: 0 36px 0 35px; 
+ 
+  border: 1px solid #dce3e6; 
+  border-radius: 6px; 
+ 
+  outline: none; 
+ 
+  background: #f8fafb; 
+  color: #10232d; 
+ 
+  font-family: inherit; 
+  font-size: 10px; 
+ 
+  transition: 
+    border-color 0.15s ease, 
+    background 0.15s ease, 
+    box-shadow 0.15s ease; 
+} 
+ 
+.global-search input::placeholder { 
+  color: #9aa7ad; 
+} 
+ 
+.global-search input:focus { 
+  border-color: #9bcf91; 
+  background: #ffffff; 
+ 
+  box-shadow: 0 0 0 2px rgba(85, 176, 67, 0.08); 
+} 
+ 
+.global-search svg { 
+  position: absolute; 
+  left: 11px; 
+  top: 50%; 
+ 
+  width: 14px; 
+  height: 14px; 
+ 
+  transform: translateY(-50%); 
+ 
+  color: #84939a; 
+ 
+  pointer-events: none; 
+} 
+ 
+ 
+/* --------------------------------------------------------- 
+   RIGHT AREA 
+   --------------------------------------------------------- */ 
+ 
+.topbar-right { 
+  display: flex; 
+  align-items: center; 
+  justify-content: flex-end; 
+ 
+  gap: 6px; 
+ 
+  flex: 0 0 auto; 
+} 
+ 
+ 
+/* --------------------------------------------------------- 
+   TOPBAR ICON BUTTONS 
+   --------------------------------------------------------- */ 
+ 
+.topbar-icon-button { 
+  position: relative; 
+ 
+  width: 31px; 
+  height: 31px; 
+ 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+ 
+  border: 1px solid transparent; 
+  border-radius: 6px; 
+ 
+  background: transparent; 
+  color: #52656e; 
+ 
+  cursor: pointer; 
+ 
+  transition: 
+    background 0.15s ease, 
+    border-color 0.15s ease, 
+    color 0.15s ease; 
+} 
+ 
+.topbar-icon-button:hover { 
+  border-color: #dce3e6; 
+  background: #f6f8f9; 
+  color: #10232d; 
+} 
+ 
+ 
+/* --------------------------------------------------------- 
+   NOTIFICATION BADGE 
+   --------------------------------------------------------- */ 
+ 
+.notification-badge { 
+  position: absolute; 
+ 
+  top: 3px; 
+  right: 3px; 
+ 
+  min-width: 12px; 
+  height: 12px; 
+ 
+  padding: 0 2px; 
+ 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+ 
+  border: 2px solid #ffffff; 
+  border-radius: 20px; 
+ 
+  background: #55b043; 
+  color: #ffffff; 
+ 
+  font-size: 6px; 
+  font-weight: 800; 
+  line-height: 1; 
+} 
+ 
+ 
+/* --------------------------------------------------------- 
+   VENDOR PROFILE 
+   --------------------------------------------------------- */ 
+ 
+.topbar-profile { 
+  display: flex; 
+  align-items: center; 
+ 
+  gap: 8px; 
+ 
+  margin-left: 3px; 
+  padding-left: 10px; 
+ 
+  border-left: 1px solid #e5eaec; 
+} 
+ 
+.topbar-avatar { 
+  width: 29px; 
+  height: 29px; 
+ 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+ 
+  flex-shrink: 0; 
+ 
+  border-radius: 50%; 
+ 
+  background: #eaf6e7; 
+  color: #438f36; 
+ 
+  font-size: 9px; 
+  font-weight: 800; 
+} 
+ 
+.topbar-profile-info { 
+  display: flex; 
+  flex-direction: column; 
+ 
+  min-width: 0; 
+} 
+ 
+.topbar-profile-info strong { 
+  color: #10232d; 
+ 
+  font-size: 9px; 
+  font-weight: 750; 
+ 
+  line-height: 1.2; 
+} 
+ 
+.topbar-profile-info span { 
+  margin-top: 1px; 
+ 
+  color: #84939a; 
+ 
+  font-size: 8px; 
+ 
+  line-height: 1.2; 
+} 
+ 
+ 
+/* --------------------------------------------------------- 
+   RESPONSIVE 
+   --------------------------------------------------------- */ 
+ 
+@media (max-width: 1100px) { 
+  .vendor-topbar { 
+    padding: 0 15px; 
+  } 
+ 
+  .topbar-left { 
+    min-width: 140px; 
+  } 
+ 
+  .global-search { 
+    margin: 0 12px; 
+    max-width: 380px; 
+  } 
+ 
+  .topbar-profile-info { 
+    display: none; 
+  } 
+ 
+  .topbar-profile { 
+    padding-left: 7px; 
+  } 
+} 
+ 
+ 
+@media (max-width: 800px) { 
+  .vendor-topbar { 
+    padding: 0 12px; 
+  } 
+ 
+  .topbar-left { 
+    min-width: auto; 
+  } 
+ 
+  .topbar-page-info { 
+    display: none; 
+  } 
+ 
+  .global-search { 
+    margin: 0 8px; 
+    min-width: 120px; 
+    max-width: none; 
+  } 
+} 
+ 
+ 
+@media (max-width: 600px) { 
+  .vendor-topbar { 
+    height: 50px; 
+    min-height: 50px; 
+ 
+    padding: 0 10px; 
+  } 
+ 
+  .global-search { 
+    height: 32px; 
+    margin: 0 6px; 
+  } 
+ 
+  .global-search input { 
+    height: 32px; 
+    padding-left: 32px; 
+  } 
+ 
+  .topbar-icon-button { 
+    width: 29px; 
+    height: 29px; 
+  } 
+ 
+  .topbar-avatar { 
+    width: 27px; 
+    height: 27px; 
+  } 
+}

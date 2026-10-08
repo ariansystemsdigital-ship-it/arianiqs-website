@@ -1,0 +1,667 @@
+.vendor-offers-page {
+  width: 100%;
+  padding: 28px 32px 40px;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.offers-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.offers-title-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.offers-title-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eef8eb;
+  color: #55b043;
+}
+
+.offers-header h1 {
+  margin: 0;
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #172019;
+}
+
+.offers-header p {
+  margin: 6px 0 0;
+  font-size: 14px;
+  color: #6d756f;
+}
+
+/* =========================================================
+   PRIMARY BUTTON
+   ========================================================= */
+
+.offers-primary-button {
+  border: none;
+  border-radius: 9px;
+  background: #55b043;
+  color: #ffffff;
+  padding: 11px 17px;
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.offers-primary-button:hover {
+  background: #479638;
+}
+
+/* =========================================================
+   SUMMARY CARDS
+   ========================================================= */
+
+.offers-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.offer-summary-card {
+  background: #ffffff;
+  border: 1px solid #e5e9e5;
+  border-radius: 12px;
+  padding: 18px 19px;
+  min-height: 116px;
+}
+
+.summary-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #69726b;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.summary-card-top svg {
+  color: #55b043;
+}
+
+.offer-summary-card strong {
+  display: block;
+  margin-top: 11px;
+  font-size: 25px;
+  line-height: 1;
+  color: #172019;
+}
+
+.offer-summary-card small {
+  display: block;
+  margin-top: 8px;
+  color: #89918b;
+  font-size: 12px;
+}
+
+/* =========================================================
+   TOOLBAR
+   ========================================================= */
+
+.offers-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.offers-search {
+  flex: 1;
+  max-width: 620px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 14px;
+  background: #ffffff;
+  border: 1px solid #dfe4df;
+  border-radius: 9px;
+  color: #879089;
+}
+
+.offers-search:focus-within {
+  border-color: #55b043;
+  box-shadow: 0 0 0 3px rgba(85, 176, 67, 0.1);
+}
+
+.offers-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #202720;
+  font-size: 13px;
+}
+
+.offers-search input::placeholder {
+  color: #9aa19c;
+}
+
+.offers-toolbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.status-filter {
+  position: relative;
+}
+
+.status-filter select {
+  appearance: none;
+  height: 44px;
+  min-width: 155px;
+  padding: 0 36px 0 13px;
+  border: 1px solid #dfe4df;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #333b35;
+  font-size: 13px;
+  cursor: pointer;
+  outline: none;
+}
+
+.status-filter select:focus {
+  border-color: #55b043;
+}
+
+.status-filter-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #737b75;
+}
+
+.filter-button {
+  height: 44px;
+  padding: 0 14px;
+  border: 1px solid #dfe4df;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #3e4741;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.filter-button:hover,
+.filter-button.filter-active {
+  border-color: #55b043;
+  color: #55b043;
+  background: #f7fcf5;
+}
+
+/* =========================================================
+   FILTER PANEL
+   ========================================================= */
+
+.offers-filter-panel {
+  display: flex;
+  align-items: flex-end;
+  gap: 18px;
+  flex-wrap: wrap;
+  padding: 17px 18px;
+  margin-bottom: 14px;
+  background: #ffffff;
+  border: 1px solid #e2e7e2;
+  border-radius: 10px;
+}
+
+.filter-panel-item {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 170px;
+}
+
+.filter-panel-item span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #687169;
+}
+
+.filter-panel-item select {
+  height: 38px;
+  border: 1px solid #dfe4df;
+  border-radius: 7px;
+  background: #ffffff;
+  padding: 0 10px;
+  color: #333b35;
+  outline: none;
+}
+
+.filter-panel-note {
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #777f79;
+  font-size: 12px;
+}
+
+/* =========================================================
+   TABLE CARD
+   ========================================================= */
+
+.offers-table-card {
+  background: #ffffff;
+  border: 1px solid #e2e7e2;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.offers-table-header {
+  min-height: 68px;
+  padding: 15px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid #e8ece8;
+}
+
+.offers-table-header h2 {
+  margin: 0;
+  color: #202820;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.offers-table-header span {
+  display: block;
+  margin-top: 5px;
+  color: #858d87;
+  font-size: 12px;
+}
+
+.table-header-info span {
+  margin: 0;
+  color: #8a928c;
+  font-size: 12px;
+}
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+.offers-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.offers-table {
+  width: 100%;
+  min-width: 1500px;
+  border-collapse: collapse;
+}
+
+.offers-table thead {
+  background: #f8faf8;
+}
+
+.offers-table th {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid #e4e8e4;
+  color: #707971;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.035em;
+  white-space: nowrap;
+}
+
+.offers-table td {
+  padding: 14px;
+  border-bottom: 1px solid #edf0ed;
+  color: #3d463f;
+  font-size: 12px;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.offers-table tbody tr {
+  transition: background 0.15s ease;
+}
+
+.offers-table tbody tr:hover {
+  background: #fbfdfb;
+}
+
+.offers-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* =========================================================
+   OFFER CELL
+   ========================================================= */
+
+.offer-code-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.offer-code-cell strong {
+  color: #2b342d;
+  font-size: 12px;
+}
+
+.offer-code-cell span {
+  color: #929992;
+  font-size: 10px;
+}
+
+/* =========================================================
+   PRODUCT CELL
+   ========================================================= */
+
+.product-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 235px;
+}
+
+.product-cell strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #2b342d;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.product-cell span {
+  color: #929992;
+  font-size: 10px;
+}
+
+/* =========================================================
+   SKU / PRICE
+   ========================================================= */
+
+.sku-value {
+  color: #4c554e;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 11px;
+}
+
+.price-value {
+  color: #202820;
+  font-size: 12px;
+}
+
+/* =========================================================
+   STOCK
+   ========================================================= */
+
+.stock-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stock-cell strong {
+  color: #29312b;
+}
+
+.stock-cell span {
+  font-size: 10px;
+}
+
+.stock-good {
+  color: #4c9a3f;
+}
+
+.stock-low {
+  color: #a27b23;
+}
+
+.stock-out {
+  color: #b24e4e;
+}
+
+/* =========================================================
+   STATUS
+   ========================================================= */
+
+.offer-status {
+  min-height: 25px;
+  padding: 4px 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.offer-status.active {
+  color: #3e8734;
+  background: #edf8eb;
+}
+
+.offer-status.draft {
+  color: #806c32;
+  background: #faf5df;
+}
+
+.offer-status.paused {
+  color: #6c7270;
+  background: #eef0ef;
+}
+
+.offer-status.out-of-stock {
+  color: #a64d4d;
+  background: #fceeee;
+}
+
+.offer-status.suspended,
+.offer-status.hidden {
+  color: #875454;
+  background: #f8eeee;
+}
+
+/* =========================================================
+   VISIBILITY
+   ========================================================= */
+
+.offer-visibility {
+  min-height: 25px;
+  padding: 4px 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.offer-visibility.visible {
+  color: #428b39;
+  background: #eff8ed;
+}
+
+.offer-visibility.hidden {
+  color: #747b76;
+  background: #f0f2f0;
+}
+
+/* =========================================================
+   UPDATED
+   ========================================================= */
+
+.updated-date {
+  color: #7d857f;
+  font-size: 11px;
+}
+
+/* =========================================================
+   ACTION BUTTON
+   ========================================================= */
+
+.offer-action-button {
+  width: 32px;
+  height: 32px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  background: transparent;
+  color: #777f79;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.offer-action-button:hover {
+  border-color: #dfe5df;
+  background: #f7f9f7;
+  color: #333b35;
+}
+
+/* =========================================================
+   EMPTY STATE
+   ========================================================= */
+
+.offers-empty-state {
+  height: 230px;
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+
+.offers-empty-state svg {
+  display: block;
+  margin: 0 auto 10px;
+  color: #9ba39d;
+}
+
+.offers-empty-state strong {
+  display: block;
+  color: #404940;
+  font-size: 14px;
+}
+
+.offers-empty-state span {
+  display: block;
+  margin-top: 5px;
+  color: #929992;
+  font-size: 12px;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.offers-table-footer {
+  min-height: 46px;
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #e8ece8;
+  color: #8a928c;
+  font-size: 11px;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+  .offers-summary-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .offers-toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .offers-search {
+    max-width: none;
+  }
+
+  .offers-toolbar-actions {
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 700px) {
+  .vendor-offers-page {
+    padding: 20px 16px 30px;
+  }
+
+  .offers-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .offers-primary-button {
+    width: 100%;
+  }
+
+  .offers-summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .offers-toolbar-actions {
+    width: 100%;
+  }
+
+  .status-filter {
+    flex: 1;
+  }
+
+  .status-filter select {
+    width: 100%;
+  }
+
+  .filter-button {
+    flex: 1;
+    justify-content: center;
+  }
+
+  .offers-table-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .offers-table-footer {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    padding: 10px 18px;
+  }
+}

@@ -1,0 +1,666 @@
+.add-offer-page {
+  min-height: calc(100vh - 72px);
+  padding: 28px 34px 50px;
+  background: #f5f7f6;
+}
+
+/* =========================================================
+   TOP BAR
+========================================================= */
+
+.offer-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.offer-back-button {
+  border: 0;
+  background: transparent;
+  color: #4b5952;
+  padding: 7px 0;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.offer-back-button:hover {
+  color: #398b31;
+}
+
+.offer-page-step {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+
+  color: #5a665f;
+
+  background: #ffffff;
+  border: 1px solid #dfe6e2;
+
+  padding: 7px 10px;
+  border-radius: 7px;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.offer-page-header {
+  margin-bottom: 22px;
+}
+
+.offer-breadcrumb {
+  color: #7c8781;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.offer-page-header h1 {
+  margin: 0;
+
+  color: #17211c;
+
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.offer-page-header p {
+  margin: 8px 0 0;
+
+  color: #68736e;
+  font-size: 14px;
+}
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.add-offer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.offer-form-card {
+  background: #ffffff;
+
+  border: 1px solid #dfe6e2;
+  border-radius: 12px;
+
+  padding: 21px;
+}
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.offer-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  padding-bottom: 17px;
+  margin-bottom: 18px;
+
+  border-bottom: 1px solid #edf0ee;
+}
+
+.offer-section-icon {
+  width: 36px;
+  height: 36px;
+
+  background: #eef7ec;
+  color: #4b9c41;
+
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.offer-section-heading h2 {
+  margin: 0;
+
+  color: #27332c;
+  font-size: 16px;
+}
+
+.offer-section-heading p {
+  margin: 3px 0 0;
+
+  color: #89928d;
+  font-size: 12px;
+}
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.offer-form-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 18px;
+}
+
+.offer-field {
+  min-width: 0;
+}
+
+.offer-field.full-field {
+  width: 100%;
+}
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.offer-field label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #4b5750;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.offer-field label span {
+  color: #c54b4b;
+}
+
+/* =========================================================
+   NORMAL INPUTS
+========================================================= */
+
+.offer-field input,
+.offer-field select,
+.offer-field textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  border: 1px solid #d8e0dc;
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #27332c;
+
+  outline: none;
+
+  font-family: inherit;
+  font-size: 13px;
+
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.offer-field input,
+.offer-field select {
+  height: 43px;
+
+  padding: 0 12px;
+}
+
+.offer-field textarea {
+  min-height: 110px;
+
+  padding: 12px;
+
+  resize: vertical;
+
+  line-height: 1.5;
+}
+
+.offer-field input:focus,
+.offer-field select:focus,
+.offer-field textarea:focus {
+  border-color: #55b043;
+
+  box-shadow: 0 0 0 3px rgba(85, 176, 67, 0.08);
+}
+
+.offer-field input::placeholder,
+.offer-field textarea::placeholder {
+  color: #a0a9a4;
+}
+
+/* =========================================================
+   OFFER PRICE
+========================================================= */
+
+.offer-price-wrapper {
+  display: flex !important;
+  align-items: stretch !important;
+
+  width: 100% !important;
+  height: 43px !important;
+
+  box-sizing: border-box !important;
+
+  background: #ffffff !important;
+
+  border: 1px solid #d8e0dc !important;
+  border-radius: 8px !important;
+
+  overflow: hidden !important;
+}
+
+.offer-price-wrapper:focus-within {
+  border-color: #55b043 !important;
+
+  box-shadow: 0 0 0 3px rgba(85, 176, 67, 0.08) !important;
+}
+
+.offer-currency-symbol {
+  flex: 0 0 48px !important;
+
+  width: 48px !important;
+  height: 43px !important;
+
+  box-sizing: border-box !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  background: #f7f9f8 !important;
+
+  border-right: 1px solid #dfe5e1 !important;
+
+  color: #37443c !important;
+
+  font-size: 14px !important;
+  font-weight: 700 !important;
+}
+
+.offer-price-wrapper > input {
+  flex: 1 1 auto !important;
+
+  width: 100% !important;
+  min-width: 0 !important;
+
+  height: 41px !important;
+
+  box-sizing: border-box !important;
+
+  margin: 0 !important;
+
+  padding: 0 13px !important;
+
+  background: #ffffff !important;
+
+  color: #17211c !important;
+
+  border: 0 !important;
+  border-radius: 0 !important;
+
+  outline: none !important;
+  box-shadow: none !important;
+
+  font-family: inherit !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+
+  opacity: 1 !important;
+}
+
+.offer-price-wrapper > input:focus {
+  border: 0 !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.offer-price-wrapper > input::placeholder {
+  color: #9aa39e !important;
+  opacity: 1 !important;
+}
+
+/* =========================================================
+   SELECT
+========================================================= */
+
+.offer-field select {
+  cursor: pointer;
+}
+
+/* =========================================================
+   SELECTED MASTER PRODUCT
+========================================================= */
+
+.selected-product-card {
+  margin-top: 16px;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 1px;
+
+  background: #e2e8e4;
+
+  border: 1px solid #e2e8e4;
+
+  border-radius: 9px;
+
+  overflow: hidden;
+}
+
+.selected-product-card > div {
+  background: #fafcfb;
+
+  padding: 13px;
+}
+
+.selected-product-card span {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #8a948f;
+
+  font-size: 10px;
+}
+
+.selected-product-card strong {
+  display: block;
+
+  color: #3d4942;
+
+  font-size: 12px;
+}
+
+/* =========================================================
+   ERRORS
+========================================================= */
+
+.offer-field-error {
+  display: block;
+
+  margin-top: 5px;
+
+  color: #bd4949;
+
+  font-size: 11px;
+}
+
+/* =========================================================
+   TEXT COUNTER
+========================================================= */
+
+.offer-field-counter {
+  text-align: right;
+
+  color: #9aa39e;
+
+  font-size: 10px;
+
+  margin-top: 5px;
+}
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.offer-form-actions {
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 10px;
+
+  padding-top: 2px;
+}
+
+.primary-offer-button,
+.secondary-offer-button {
+  min-height: 44px;
+
+  padding: 0 18px;
+
+  border-radius: 8px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.primary-offer-button {
+  border: 0;
+
+  background: #55b043;
+
+  color: #ffffff;
+}
+
+.primary-offer-button:hover {
+  background: #469737;
+}
+
+.secondary-offer-button {
+  border: 1px solid #d6ded9;
+
+  background: #ffffff;
+
+  color: #4c5851;
+}
+
+.secondary-offer-button:hover {
+  border-color: #55b043;
+
+  color: #398b31;
+}
+
+/* =========================================================
+   SUCCESS
+========================================================= */
+
+.offer-success-card {
+  max-width: 850px;
+
+  margin: 30px auto;
+
+  background: #ffffff;
+
+  border: 1px solid #dfe6e2;
+
+  border-radius: 14px;
+
+  padding: 38px;
+
+  text-align: center;
+}
+
+.offer-success-icon {
+  width: 70px;
+  height: 70px;
+
+  margin: 0 auto 17px;
+
+  border-radius: 50%;
+
+  background: #eaf6e7;
+
+  color: #46963d;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.offer-success-card h1 {
+  margin: 0;
+
+  color: #26322b;
+
+  font-size: 27px;
+}
+
+.offer-success-card > p {
+  margin: 9px auto 25px;
+
+  color: #707b75;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+/* =========================================================
+   SUCCESS DETAILS
+========================================================= */
+
+.offer-success-details {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 1px;
+
+  background: #e2e8e4;
+
+  border: 1px solid #e2e8e4;
+
+  border-radius: 9px;
+
+  overflow: hidden;
+
+  text-align: left;
+
+  margin-bottom: 18px;
+}
+
+.offer-success-details > div {
+  background: #fafcfb;
+
+  padding: 13px;
+}
+
+.offer-success-details span {
+  display: block;
+
+  color: #8a948f;
+
+  font-size: 10px;
+
+  margin-bottom: 5px;
+}
+
+.offer-success-details strong {
+  display: block;
+
+  color: #3d4942;
+
+  font-size: 12px;
+}
+
+/* =========================================================
+   SUCCESS NOTE
+========================================================= */
+
+.offer-success-note {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 9px;
+
+  padding: 13px 15px;
+
+  background: #f0f7ee;
+
+  border: 1px solid #d7e9d2;
+
+  border-radius: 8px;
+
+  text-align: left;
+
+  color: #4d7a47;
+}
+
+.offer-success-note p {
+  margin: 0;
+
+  color: #667363;
+
+  font-size: 11px;
+
+  line-height: 1.6;
+}
+
+/* =========================================================
+   SUCCESS ACTIONS
+========================================================= */
+
+.offer-success-actions {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-top: 22px;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+  .selected-product-card {
+    grid-template-columns: 1fr;
+  }
+
+  .offer-success-details {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .add-offer-page {
+    padding: 22px 16px 40px;
+  }
+
+  .offer-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .offer-form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .primary-offer-button,
+  .secondary-offer-button {
+    width: 100%;
+  }
+
+  .offer-success-details {
+    grid-template-columns: 1fr;
+  }
+
+  .offer-success-actions {
+    flex-direction: column;
+  }
+}
